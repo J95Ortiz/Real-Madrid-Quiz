@@ -15,8 +15,7 @@ let questions = [
     ],
   },
   {
-    question:
-      "2 Player was the only spanish player signed by Florentino in his first period as president?",
+    question: "2 Who has won more Champions League titles?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -35,8 +34,34 @@ let questions = [
     ],
   },
   {
-    question:
-      "4 Player was the only spanish player signed by Florentino in his first period as president?",
+    question: "4 Who has won more La Liga Titles?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "5 Who has made more competitive appearances for Madrid?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "6 Who was Real Madrid captain for longer",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "7 Who scored more Champions League goals?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -46,7 +71,16 @@ let questions = [
   },
   {
     question:
-      "5 Player was the only spanish player signed by Florentino in his first period as president?",
+      "8 Real Madrid has played its home matches in which stadium since 1947?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "9 What is Madrid's most common nickname?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -56,7 +90,7 @@ let questions = [
   },
   {
     question:
-      "6 Player was the only spanish player signed by Florentino in his first period as president?",
+      "10 Real Madrid played home matches for the 2019–20 season at which small venue whilst their regular stadium was being renovated?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -66,7 +100,7 @@ let questions = [
   },
   {
     question:
-      "7 Player was the only spanish player signed by Florentino in his first period as president?",
+      "11 Which British football manager took charge of Real Madrid from July 1989 to November 1990?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -76,7 +110,7 @@ let questions = [
   },
   {
     question:
-      "8 Player was the only spanish player signed by Florentino in his first period as president?",
+      "12 Cristiano Ronaldo is the all-time leading goalscorer with how many goals in all competitions?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -86,7 +120,7 @@ let questions = [
   },
   {
     question:
-      "9 Player was the only spanish player signed by Florentino in his first period as president?",
+      "13 Which player spent 16 years of his career playing for Real Madrid and scored 323 goals during his career at the club?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -96,7 +130,7 @@ let questions = [
   },
   {
     question:
-      "10 Player was the only spanish player signed by Florentino in his first period as president?",
+      "14 Can you name the oldest player to ever play for Real Madrid?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -106,7 +140,7 @@ let questions = [
   },
   {
     question:
-      "11 Player was the only spanish player signed by Florentino in his first period as president?",
+      "15 As of 2024, how many European Cups/Champions Leagues have Real Madrid won?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -116,7 +150,7 @@ let questions = [
   },
   {
     question:
-      "12 Player was the only spanish player signed by Florentino in his first period as president?",
+      "16 In July 2000, who made a surprising 62 million Euros move to Real Madrid?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -126,7 +160,7 @@ let questions = [
   },
   {
     question:
-      "13 Player was the only spanish player signed by Florentino in his first period as president?",
+      "17 Which player is the oldest member in the current squad?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -136,7 +170,7 @@ let questions = [
   },
   {
     question:
-      "14 Player was the only spanish player signed by Florentino in his first period as president?",
+      "18 Which Argentine born player was instrumental in the domination of the European Cup and La Liga during the 1950s?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -146,7 +180,7 @@ let questions = [
   },
   {
     question:
-      "15 Player was the only spanish player signed by Florentino in his first period as president?",
+      "19 Gareth Bale was signed for 101 million Euros in which year?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -156,7 +190,7 @@ let questions = [
   },
   {
     question:
-      "16 Player was the only spanish player signed by Florentino in his first period as president?",
+      "20 Gareth Bale was signed for 101 million Euros from which Club?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -166,7 +200,7 @@ let questions = [
   },
   {
     question:
-      "17 Player was the only spanish player signed by Florentino in his first period as president?",
+      "21 What number shirt did David Beckham wear, citing his admiration of basketball player Michael Jordan who also wore this number shirt?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -176,7 +210,7 @@ let questions = [
   },
   {
     question:
-      "18 Player was the only spanish player signed by Florentino in his first period as president?",
+      "22 What name is given to any match between rivals FC Barcelona and Real Madrid?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -186,7 +220,7 @@ let questions = [
   },
   {
     question:
-      "19 Player was the only spanish player signed by Florentino in his first period as president?",
+      "23 Which legendary Brazilian left back scored 68 goals in 527 appearances for Madrid between 1996 and 2007?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -196,7 +230,7 @@ let questions = [
   },
   {
     question:
-      "20 Player was the only spanish player signed by Florentino in his first period as president?",
+      "24 What word was once used to describe expensive Real Madrid football players and is now often used for a select list of football superstars in any team??",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -206,7 +240,7 @@ let questions = [
   },
   {
     question:
-      "21 Player was the only spanish player signed by Florentino in his first period as president?",
+      "25 On 22 May 2012, who signed a new four-year contract to remain as Real Madrid manager through to 2016?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -216,7 +250,7 @@ let questions = [
   },
   {
     question:
-      "22 Player was the only spanish player signed by Florentino in his first period as president?",
+      "26 In the 2018 UEFA Champions League Final what was the score between Real Madrid and Liverpool?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -226,7 +260,7 @@ let questions = [
   },
   {
     question:
-      "23 Player was the only spanish player signed by Florentino in his first period as president?",
+      "27 David Beckham was the third Englishman to play for Real Madrid, who was the first?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -236,7 +270,16 @@ let questions = [
   },
   {
     question:
-      "24 Player was the only spanish player signed by Florentino in his first period as president?",
+      "28 David Beckham was the third Englishman to play for Real Madrid, who was the second?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "29 Which goalkeeper made his debut in 1999 and went on to make 725 appearances for Madrid?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -246,7 +289,79 @@ let questions = [
   },
   {
     question:
-      "25 Player was the only spanish player signed by Florentino in his first period as president?",
+      "30 Which player made his debut on 22 September 2005 when he famously scored an own goal before being sent off against Athletic Bilbao?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "31 In which year was Real Madrid founded?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "32 Who is the current Real Madrid Manager?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "33 What is the name of theReal Madrid youth academy?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "34 How many Copa del Rey titles has Real Madrid won?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "35 Who was the first foreign manager at Real Madrid?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "36 What is the name of the women's football team?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "37 Who was Real Madrid's first ever Ballon d'Or winner?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "38 Who was Real Madrid’s last Ballon d’or winner?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -256,7 +371,34 @@ let questions = [
   },
   {
     question:
-      "26 Player was the only spanish player signed by Florentino in his first period as president?",
+      "39 Which manager won 3 successive Champions Leagues with Real Madrid?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "40 Who are Real Madrid’s main kit manufacturer?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "41 What is the record attendance for a Real Madrid match?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "42 How many la liga titles have Madrid won?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -266,7 +408,16 @@ let questions = [
   },
   {
     question:
-      "27 Player was the only spanish player signed by Florentino in his first period as president?",
+      "43 Which ex Real Madrid manager went on to win a world cup and the euros with the Spanish National Team?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "44 In which year did Cristiano Ronaldo sign for Madrid?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -276,7 +427,7 @@ let questions = [
   },
   {
     question:
-      "28 Player was the only spanish player signed by Florentino in his first period as president?",
+      "45 Which ex Real Madrid defender is 41 and still plays in Portugal?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -286,7 +437,7 @@ let questions = [
   },
   {
     question:
-      "29 Player was the only spanish player signed by Florentino in his first period as president?",
+      "46 What position did Sergio Ramos play in before he was moved to central defense?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -296,7 +447,16 @@ let questions = [
   },
   {
     question:
-      "30 Player was the only spanish player signed by Florentino in his first period as president?",
+      "47 Which player became the 7th Brit to play for the club in 2023?",
+    answers: [
+      { text: "Sergio Ramos", correct: true },
+      { text: "Iker Casillas", correct: false },
+      { text: "Raul", correct: false },
+      { text: "Isco", correct: false },
+    ],
+  },
+  {
+    question: "48 Who is the current president at Real Madrid?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -306,7 +466,7 @@ let questions = [
   },
   {
     question:
-      "31 Player was the only spanish player signed by Florentino in his first period as president?",
+      "49 Which manager was sacked by the Spanish Federation after he agreed to coach Real before the 2018 World Cup?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -316,187 +476,7 @@ let questions = [
   },
   {
     question:
-      "32 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "33 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "34 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "35 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "36 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "37 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "38 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "39 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "40 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "41 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "42 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "43 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "44 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "45 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "46 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "47 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "48 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "49 Player was the only spanish player signed by Florentino in his first period as president?",
-    answers: [
-      { text: "Sergio Ramos", correct: true },
-      { text: "Iker Casillas", correct: false },
-      { text: "Raul", correct: false },
-      { text: "Isco", correct: false },
-    ],
-  },
-  {
-    question:
-      "50 Player was the only spanish player signed by Florentino in his first period as president?",
+      "50 Which ex Real Madrid Midfielder went on to win the German Bundesliga with Bayer Leverkusen?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
