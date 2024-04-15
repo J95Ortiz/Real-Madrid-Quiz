@@ -1,0 +1,142 @@
+/* Copied the below code from the main Real Madrid Project as will look to link the two together */
+/* * Selector to apply to ALL styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Added below to avoid having to repeat throughout */
+ul {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    max-height: 5em;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    border-bottom: 1px solid slateblue;
+    /* Added slight bottom border to header to distinguish it easier */
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styles for the Logo IMAGE */
+#logo {
+    padding: 6px;
+    margin-top: 1px;
+    /* Turns #logo into a circle */
+    border-radius: 50%;
+}
+
+/* Styles for the Logo TEXT */
+#logo2 {
+    font-size: large;
+    align-self: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 6px;
+}
+
+/* Styles for the Nav Menu */
+#menu {
+    display: block;
+    list-style-type: none;
+}
+
+#menu>li {
+    padding: 5px;
+    position: relative;
+}
+
+.active {
+    border-bottom: 1px solid slateblue;
+    /* Adds a line under the active page */
+}
+
+/*  Navbar styles for dropdown toggle */
+nav {
+    position: absolute;
+    right: 0;
+    padding: 6px;
+    display: none;
+    background-color: black;
+    width: fit-content;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+    padding: 6px 1rem;
+}
+
+/* Main Content */
+main {
+    background: url("../images/cover2.png") fixed center/cover;
+    /* Real Madrid Logo set as background */
+    background-size: 500px;
+    margin-top: 4em;
+    background-color: rgb(29, 51, 97);
+    /* Style below added to push footer to the bottom of the page */
+    flex: 1 0 auto;
+
+    /* Top margin applied to main to push content below Header and keep it on top of the footer */
+    margin-top: 77px;
+    margin-bottom: 3em;
+}
+
+/* Footer */
+/* Styles added to ensure footer is fixed and sticks to the bottom of the page */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-top: auto;
+    background-color: black;
+    min-height: 3em;
+}
+
+#social {
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    border-top: 1px solid slategray;
+    /* Added little border on the top so footer stands out due to BG image's color */
+}
+
+/* Below styles added to i elements so they look better in the footer */
+#social i {
+    font-size: 160%;
+    color: white;
+    padding: 5px;
+}
+
+/* QUIZ GAME SECTION */
