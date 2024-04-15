@@ -110,45 +110,6 @@ main {
     margin-top: 77px;
     margin-bottom: 3em;
 }
-/* QUIZ PAGE */
-/* Styles the Quiz Section so it appears central and applies a border */
-.game-area {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: gold;
-    width: 85%;
-    padding: 1%;
-    max-height: 450px;
-    max-width: 900px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    text-align: center;
-    align-self: center;
-    justify-content: center;
-}
-
-/* Spaces out the header and gives it aq bottom border thinner than the quiz section border */
-.game-area h1 {
-    border-bottom: 2px gold;
-    padding: 1%;
-}
-
-/* Styles the question and answer area */
-.central-area {
-    padding: 1%;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-}
-
-.option {
-    width: 90%;
-    margin: 1%;
-    padding: 1%;
-    font-weight: bolder;
-    border: 0.5px gold;
-}
 
 /* Footer */
 /* Styles added to ensure footer is fixed and sticks to the bottom of the page */
@@ -178,4 +139,57 @@ footer {
     padding: 5px;
 }
 
-/* QUIZ GAME SECTION */
+/* QUIZ PAGE */
+/* Styles the Quiz Section so it appears central and applies a border */
+.game-area {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: solid gold;
+    width: 85%;
+    padding: 1%;
+    max-height: 450px;
+    max-width: 900px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+
+/* Spaces out the header and gives it aq bottom border thinner than the quiz section border */
+.game-area h1 {
+    border-bottom: 2px solid gold;
+    padding: 1%;
+}
+
+/* Styles the question and answer area */
+.central-area {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+/* Styles the Answer options, will add colour to them later on for correct and wrong answers */
+.option {
+    width: 90%;
+    margin: 1%;
+    padding: 1%;
+    font-weight: bolder;
+    border: 0.5px solid gold;
+    border-radius: 5px;
+}
+
+/* Styles the next-btn, will style to look similar to the lotto submit button */
+#next-btn {
+    align-self: center;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+    background-color: rgba(88, 0, 153, 0.5);
+    border: 1px solid gold;
+    border-radius: 5px;
+    font-weight: bolder;
+    width: 25%;
+}
