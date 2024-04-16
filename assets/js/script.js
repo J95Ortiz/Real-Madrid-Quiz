@@ -504,25 +504,34 @@ let score = 0;
 //creates a blank array where 10 random numbers from 1 to 50 are added
 let questionNumbers = [];
 
-for (let i = 0; i < 10; i++) {
-  questionNumbers[i] = Math.floor(Math.random() * 50) + 1;
-}
-
+let i = questionNumbers.push(Math.floor(Math.random() * 50) + 1);
+while (questionNumbers.length < 10);
 console.log(questionNumbers);
+
+//function setup() {
+//for (let i = 0; i < 10; i++) {
+//questionNumbers[i] = Math.floor(Math.random() * 50) + 1;
+//}
+//}
+
+//console.log(questionNumbers);
+
+//if (questionNumbers[n] in questionNumbers === "true");
+//for (let n; n < 11; n++) {
+//  questionNumbers[n] = Math.floor(Math.random() * 50) + 1;
+//}
+//console.log(questionNumbers);
+
+/**
+ * Sets up the quiz by adding 10 random numbers to questionNumbers Array.
+ * Then goes through this array and makes sure there are no duplicates.
+ * If there are none, another array is created which will be the quiz questions for this game.
+ */
+function setupQuiz() {}
 
 //Need to create a way to loop through array and check if any numbers are repeated and readd a question if so.
 
-//Need to then go through the Array and match the number with the question rank 
-
-
-
-
-
+//Need to then go through the Array and match the number with the question rank
 
 //creates a fn randomNumber() which
 //Gets a random number from 1 to 50//
-
-//if questionNumbers.length === 10
-
-//let i = questionNumbers.push(Math.floor(Math.random() * 50) + 1);while (i < 10) {  i++;}console.log(questionNumbers);
-
