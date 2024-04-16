@@ -557,21 +557,26 @@ let score = 0;
 
 /**
  * Sets up the quiz by adding 10 random numbers to questionNumbers Array.
- * Then goes through this array and makes sure there are no duplicates.
- * If there are none, another array is created which will be the quiz questions for this game.
+ * Then another array is created which will hold the quiz questions for this game.
  */
 function setupQuiz() {}
 
 //creates a blank array where the quiz random numbers will go
 let questionNumbers = [];
 
-//Function to be added here
+//creates the array where the questions selected by the random number thing will go into
+let quizArray = [];
+
+//part of setupQuiz() fn
 //Adds 10 random numbers between 0 & 49 to the array
 for (let i = 0; i < 10; i++) {
-  questionNumbers[i] = Math.floor(Math.random() * 49);
+  questionNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
+  //console.log(questionNumbers[i]); //logs the numbers in the array
+  //console.log(questions[questionNumbers[i]].question); //gets the random number and assigns it the question corresponding to that number.
+  //console.log(questions[questionNumbers[i]]);
   console.log(questionNumbers);
-  console.log(questionNumbers[i]); //logs the numbers in the array
-  console.log(questions[questionNumbers[i]].question); //gets the random number and assigns it the question corresponding to that number.
+  quizArray.push(questions[questionNumbers[i]]);
+  console.log(quizArray); //Builds an array with 10 Q's and their answers
 }
 
 //console.log(questionNumbers.length);
@@ -580,10 +585,8 @@ console.log(questions[0].question); //logs the first question
 console.log(questions[0].rank);
 console.log(questions[0].answers);
 console.log(questions[0].answers[1]);
-quizQuestion.innerHTML = questions[1].question;
+//quizQuestion.innerHTML = questions[1].question;
 
 //Need to create a way to loop through array and check if any numbers are repeated and readd a question if so.
 
 //Need to then go through the Array and match the number with the question rank
-
-
