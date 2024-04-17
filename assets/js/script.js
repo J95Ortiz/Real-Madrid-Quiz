@@ -542,16 +542,25 @@ document.addEventListener("DOMContentLoaded", function () {
   //quizQuestion.innerHTML = questions[1].question;
 });
 
+console.log(questions[0].question); //logs the first question
+console.log(questions[0].rank);
+console.log(questions[0].answers);
+console.log(questions[0].answers[1]);
+
 //Variable quizQuestion will display the question text in #question h2
 let quizQuestion = document.getElementById("question");
 
 //Variable option1, 2, 3 & 4 will display the potential answers in the .answer buttons
 let option1 = document.getElementsByClassName("option1");
+let option2 = document.getElementsByClassName("option2");
+let option3 = document.getElementsByClassName("option3");
+let option4 = document.getElementsByClassName("option4");
 
 let answer = document.getElementsByClassName("answer");
 
 //Variable nextBtn will apply to the next button
 //Ideally this should be hidden until displayed question is answered
+//Will also be used to start quiz once all questions are answered
 let nextBtn = document.getElementById("next-btn");
 
 //Sets the score as 0 when the user starts the quiz and increases if question is answered correctly
@@ -560,46 +569,74 @@ let score = 0;
 //Variable which I might use later on, added for now for clarity
 let currentQuestion = 0;
 
-/**
- * Sets up the quiz by adding 10 random numbers to questionNumbers Array.
- * Then another array is created which will hold the quiz questions for this game.
- */
-function setupQuiz() {}
-
 //creates a blank array where the quiz random numbers will go
 let randomNumbers = [];
 
 //creates the array where the questions selected by the random number thing will go into
 let quizArray = [];
 
-//part of setupQuiz() fn
+/**
+ * Sets up the quiz by adding 10 random numbers to questionNumbers Array.
+ * Then another array is created which will hold the quiz questions for this game.
+ */
+function setupQuiz() {}
+
+//below should be part of setupQuiz() fn I think
 //Adds 10 random numbers between 0 & 49 to the array
 for (let i = 0; i < 10; i++) {
   randomNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
-  //console.log(questionNumbers[i]); //logs the numbers in the array
-  //console.log(questions[questionNumbers[i]].question); //gets the random number and assigns it the question corresponding to that number.
-  //console.log(questions[questionNumbers[i]]);
   console.log(randomNumbers);
   quizArray.push(questions[randomNumbers[i]]);
   console.log(quizArray); //Builds an array with 10 Q's and their answers
 }
 
-//console.log(questionNumbers.length);
-
-console.log(questions[0].question); //logs the first question
-console.log(questions[0].rank);
-console.log(questions[0].answers);
-console.log(questions[0].answers[1]);
-//quizQuestion.innerHTML = questions[1].question;
-
 //Create a way to go through quizArray and display each question
-quizQuestion.innerHTML = quizArray[1].question;
-option1.innerHTML = quizArray[1].answers[0].text;
-console.log(quizArray[1].answers[0].text);
+//quizQuestion.innerHTML = quizArray[1].question;
+//option1.innerHTML = quizArray[0].answers[0].text;
+console.log(quizArray[0].answers[0].text);
 
 //Uses currentQuestion as an index which will go from 0 to 9 as the quiz runs through the questions in the Array
 let displayedQuestion = quizArray[currentQuestion];
+console.log(displayedQuestion);
+console.log(displayedQuestion.answers);
+quizQuestion.innerHTML = displayedQuestion.question;
+option1.innerHTML = displayedQuestion.answers[0].text;
+option2.innerHTML = displayedQuestion.answers[1];
+option3.innerHTML = displayedQuestion.answers[2];
+option4.innerHTML = displayedQuestion.answer;
+console.log(option4);
 
-displayedQuestion.answers.forEach((answer) => {
-  answer.innerHTML = answer.text;
+//let button = document.createElement("button");
+//button.innerHTML = answer.text;
+
+/**
+ * Function created to run through the quiz once setupQuiz fn has ran
+ */
+function startGame() {
+  //Here we should use the quizArray we created and display
+}
+
+/**
+ * Function created to load up the next question
+ */
+function nextQuestion() {}
+
+nextBtn.addEventListener("click", () => {
+  //if not at score page then run nextQuestion() fn
 });
+
+/**
+ * Function created to reset the game once all the questions answered
+ */
+function resetGame() {}
+
+/**
+ * Function to collate scores and show them on the screen
+ */
+function gameScore() {
+  //display a message saying: `You scored ${score} out of 10`
+}
+
+//console.log(questionNumbers[i]); //logs the numbers in the array
+//console.log(questions[questionNumbers[i]].question); //gets the random number and assigns it the question corresponding to that number.
+//console.log(questions[questionNumbers[i]]);
