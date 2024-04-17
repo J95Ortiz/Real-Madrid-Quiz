@@ -539,14 +539,16 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(questions[0].rank);
   console.log(questions[0].answers);
   console.log(questions[0].answers[1]);
-  quizQuestion.innerHTML = questions[1].question;
+  //quizQuestion.innerHTML = questions[1].question;
 });
 
 //Variable quizQuestion will display the question text in #question h2
 let quizQuestion = document.getElementById("question");
 
-//Variable quizAnswers will display the potential answers in the .option buttons
-let quizAnswers = document.getElementById("option");
+//Variable option1, 2, 3 & 4 will display the potential answers in the .answer buttons
+let option1 = document.getElementsByClassName("option1");
+
+let answer = document.getElementsByClassName("answer");
 
 //Variable nextBtn will apply to the next button
 //Ideally this should be hidden until displayed question is answered
@@ -555,6 +557,9 @@ let nextBtn = document.getElementById("next-btn");
 //Sets the score as 0 when the user starts the quiz and increases if question is answered correctly
 let score = 0;
 
+//Variable which I might use later on, added for now for clarity
+let currentQuestion = 0;
+
 /**
  * Sets up the quiz by adding 10 random numbers to questionNumbers Array.
  * Then another array is created which will hold the quiz questions for this game.
@@ -562,7 +567,7 @@ let score = 0;
 function setupQuiz() {}
 
 //creates a blank array where the quiz random numbers will go
-let questionNumbers = [];
+let randomNumbers = [];
 
 //creates the array where the questions selected by the random number thing will go into
 let quizArray = [];
@@ -570,12 +575,12 @@ let quizArray = [];
 //part of setupQuiz() fn
 //Adds 10 random numbers between 0 & 49 to the array
 for (let i = 0; i < 10; i++) {
-  questionNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
+  randomNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
   //console.log(questionNumbers[i]); //logs the numbers in the array
   //console.log(questions[questionNumbers[i]].question); //gets the random number and assigns it the question corresponding to that number.
   //console.log(questions[questionNumbers[i]]);
-  console.log(questionNumbers);
-  quizArray.push(questions[questionNumbers[i]]);
+  console.log(randomNumbers);
+  quizArray.push(questions[randomNumbers[i]]);
   console.log(quizArray); //Builds an array with 10 Q's and their answers
 }
 
@@ -587,6 +592,14 @@ console.log(questions[0].answers);
 console.log(questions[0].answers[1]);
 //quizQuestion.innerHTML = questions[1].question;
 
-//Need to create a way to loop through array and check if any numbers are repeated and readd a question if so.
+//Create a way to go through quizArray and display each question
+quizQuestion.innerHTML = quizArray[1].question;
+option1.innerHTML = quizArray[1].answers[0].text;
+console.log(quizArray[1].answers[0].text);
 
-//Need to then go through the Array and match the number with the question rank
+//Uses currentQuestion as an index which will go from 0 to 9 as the quiz runs through the questions in the Array
+let displayedQuestion = quizArray[currentQuestion];
+
+displayedQuestion.answers.forEach((answer) => {
+  answer.innerHTML = answer.text;
+});
