@@ -556,7 +556,7 @@ let option2 = document.getElementsByClassName("option2");
 let option3 = document.getElementsByClassName("option3");
 let option4 = document.getElementsByClassName("option4");
 
-let answer = document.getElementsByClassName("answer");
+let answer = document.getElementsByClassName("answer-buttons");
 
 //Variable nextBtn will apply to the next button
 //Ideally this should be hidden until displayed question is answered
@@ -580,7 +580,6 @@ let quizArray = [];
  * Then another array is created which will hold the quiz questions for this game.
  */
 function setupQuiz() {
-  //below should be part of setupQuiz() fn I think
   //Adds 10 random numbers between 0 & 49 to the array
   for (let i = 0; i < 10; i++) {
     randomNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
@@ -623,7 +622,8 @@ function startGame() {
 }
 
 /**
- * Function created to load up the next question
+ * Function created to load up the next question.
+ * This applies the parameters from quizArray & currentQuestionNumber
  */
 function nextQuestion() {
   displayedQuestion(quizArray[currentQuestionNumber]);
@@ -633,11 +633,23 @@ nextBtn.addEventListener("click", () => {
   //if not at score page then run nextQuestion() fn
 });
 
+/**
+ * This function ensures that the displayed question and the answers in quizArray all show
+ */
 function displayedQuestion(question) {
   quizQuestion.innerText = question.question;
+  //Once question is shown I want to create a button for each answer for the user to choose.
+  //Will then populate the new buttons with the answer options & give them the class .answer so they refer to the options in HTML.
+  question.answers.forEach((answer) => {
+    let button = document.createElement("button");
+    button.innerText = answer.text;
+    button.classList.add("answer-buttons");
+    //Need to make the buttons created above go over the ones in the HTML &
+    //will need to add whether the button content is the correct answer or not, so will create fn for this.
+  });
 }
 
-//Called function below so the quiz is setup and then calls the other fns 
+//Called function below so the quiz is setup and then calls the other fns
 setupQuiz();
 
 //Create a way to go through quizArray and display each question
