@@ -566,8 +566,8 @@ let nextBtn = document.getElementById("next-btn");
 //Sets the score as 0 when the user starts the quiz and increases if question is answered correctly
 let score = 0;
 
-//Variable which I might use later on, added for now for clarity
-let currentQuestion = 0;
+//Variable which will run through the questins in quizArray
+let currentQuestionNumber = 0;
 
 //creates a blank array where the quiz random numbers will go
 let randomNumbers = [];
@@ -579,31 +579,32 @@ let quizArray = [];
  * Sets up the quiz by adding 10 random numbers to questionNumbers Array.
  * Then another array is created which will hold the quiz questions for this game.
  */
-function setupQuiz() {}
-
-//below should be part of setupQuiz() fn I think
-//Adds 10 random numbers between 0 & 49 to the array
-for (let i = 0; i < 10; i++) {
-  randomNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
-  console.log(randomNumbers);
-  quizArray.push(questions[randomNumbers[i]]);
-  console.log(quizArray); //Builds an array with 10 Q's and their answers
+function setupQuiz() {
+  //below should be part of setupQuiz() fn I think
+  //Adds 10 random numbers between 0 & 49 to the array
+  for (let i = 0; i < 10; i++) {
+    randomNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
+    console.log(randomNumbers);
+    quizArray.push(questions[randomNumbers[i]]);
+    console.log(quizArray); //Builds an array with 10 Q's and their answers
+  }
+  startGame();
 }
 
 //Create a way to go through quizArray and display each question
 //quizQuestion.innerHTML = quizArray[1].question;
 //option1.innerHTML = quizArray[0].answers[0].text;
-console.log(quizArray[0].answers[0].text);
+//console.log(quizArray[0].answers[0].text);
 
 //Uses currentQuestion as an index which will go from 0 to 9 as the quiz runs through the questions in the Array
-let displayedQuestion = quizArray[currentQuestion];
+//let displayedQuestion = quizArray[currentQuestion];
 console.log(displayedQuestion);
 console.log(displayedQuestion.answers);
-quizQuestion.innerHTML = displayedQuestion.question;
-option1.innerHTML = displayedQuestion.answers[0].text;
-option2.innerHTML = displayedQuestion.answers[1];
-option3.innerHTML = displayedQuestion.answers[2];
-option4.innerHTML = displayedQuestion.answer;
+//quizQuestion.innerHTML = displayedQuestion.question;
+//option1.innerHTML = displayedQuestion.answers[0].text;
+//option2.innerHTML = displayedQuestion.answers[1];
+//option3.innerHTML = displayedQuestion.answers[2];
+//option4.innerHTML = displayedQuestion.answer;
 console.log(option4);
 
 //let button = document.createElement("button");
@@ -613,17 +614,46 @@ console.log(option4);
  * Function created to run through the quiz once setupQuiz fn has ran
  */
 function startGame() {
-  //Here we should use the quizArray we created and display
+  //Need the fn to make currentQuestion = 0 each time the quiz starts,
+  //so that the 1st question displayed is the 1st one in the array
+  currentQuestionNumber = 0;
+  //Here we should use the quizArray we created and display the 1st question in the array
+  //I'll use the nextQuestion fn for this
+  nextQuestion();
 }
 
 /**
  * Function created to load up the next question
  */
-function nextQuestion() {}
+function nextQuestion() {
+  displayedQuestion(quizArray[currentQuestionNumber]);
+}
 
 nextBtn.addEventListener("click", () => {
   //if not at score page then run nextQuestion() fn
 });
+
+function displayedQuestion(question) {
+  quizQuestion.innerText = question.question;
+}
+
+//Called function below so the quiz is setup and then calls the other fns 
+setupQuiz();
+
+//Create a way to go through quizArray and display each question
+//quizQuestion.innerHTML = quizArray[1].question;
+//option1.innerHTML = quizArray[0].answers[0].text;
+
+//Uses currentQuestion as an index which will go from 0 to 9 as the quiz runs through the questions in the Array
+//let displayedQuestion = quizArray[currentQuestion];
+//console.log(displayedQuestion);
+//console.log(displayedQuestion.answers);
+//quizQuestion.innerHTML = displayedQuestion.question;
+//option1.innerHTML = displayedQuestion.answers[0].text;
+//option2.innerHTML = displayedQuestion.answers[1];
+//option3.innerHTML = displayedQuestion.answers[2];
+//option4.innerHTML = displayedQuestion.answer;
+//console.log(option4);
 
 /**
  * Function created to reset the game once all the questions answered
