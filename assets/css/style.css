@@ -179,6 +179,12 @@ footer {
     font-weight: bolder;
     border: 0.5px solid gold;
     border-radius: 5px;
+    transition: all 0.45s;
+}
+
+.answer-buttons:hover {
+    background: black;
+    color:white;
 }
 
 /* Styles the next-btn, will style to look similar to the lotto submit button */
@@ -192,4 +198,10 @@ footer {
     border-radius: 5px;
     font-weight: bolder;
     width: 25%;
+    transition: all 0.45s;
+}
+
+#next-btn:hover {
+    background: white;
+    color: rgba(88, 0, 153, 0.5);
 }
