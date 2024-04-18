@@ -172,7 +172,7 @@ footer {
 }
 
 /* Styles the Answer options, will add colour to them later on for correct and wrong answers */
-.answer {
+.answer-buttons {
     width: 90%;
     margin: 1%;
     padding: 1%;

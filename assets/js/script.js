@@ -534,19 +534,6 @@ let questions = [
   },
 ];
 
-document.addEventListener("DOMContentLoaded", function () {
-  console.log(questions[0].question); //logs the first question
-  console.log(questions[0].rank);
-  console.log(questions[0].answers);
-  console.log(questions[0].answers[1]);
-  //quizQuestion.innerHTML = questions[1].question;
-});
-
-console.log(questions[0].question); //logs the first question
-console.log(questions[0].rank);
-console.log(questions[0].answers);
-console.log(questions[0].answers[1]);
-
 //Variable quizQuestion will display the question text in #question h2
 let quizQuestion = document.getElementById("question");
 
@@ -556,7 +543,7 @@ let option2 = document.getElementsByClassName("option2");
 let option3 = document.getElementsByClassName("option3");
 let option4 = document.getElementsByClassName("option4");
 
-let answer = document.getElementsByClassName("answer-buttons");
+let answerChoices = document.getElementsByClassName("answer-buttons");
 
 //Variable nextBtn will apply to the next button
 //Ideally this should be hidden until displayed question is answered
@@ -587,7 +574,6 @@ function setupQuiz() {
     quizArray.push(questions[randomNumbers[i]]);
     console.log(quizArray); //Builds an array with 10 Q's and their answers
   }
-  startGame();
 }
 
 //Create a way to go through quizArray and display each question
@@ -599,15 +585,7 @@ function setupQuiz() {
 //let displayedQuestion = quizArray[currentQuestion];
 console.log(displayedQuestion);
 console.log(displayedQuestion.answers);
-//quizQuestion.innerHTML = displayedQuestion.question;
-//option1.innerHTML = displayedQuestion.answers[0].text;
-//option2.innerHTML = displayedQuestion.answers[1];
-//option3.innerHTML = displayedQuestion.answers[2];
-//option4.innerHTML = displayedQuestion.answer;
 console.log(option4);
-
-//let button = document.createElement("button");
-//button.innerHTML = answer.text;
 
 /**
  * Function created to run through the quiz once setupQuiz fn has ran
@@ -616,9 +594,6 @@ function startGame() {
   //Need the fn to make currentQuestion = 0 each time the quiz starts,
   //so that the 1st question displayed is the 1st one in the array
   currentQuestionNumber = 0;
-  //Here we should use the quizArray we created and display the 1st question in the array
-  //I'll use the nextQuestion fn for this
-  nextQuestion();
 }
 
 /**
@@ -629,28 +604,40 @@ function nextQuestion() {
   displayedQuestion(quizArray[currentQuestionNumber]);
 }
 
-nextBtn.addEventListener("click", () => {
-  //if not at score page then run nextQuestion() fn
-});
-
 /**
  * This function ensures that the displayed question and the answers in quizArray all show
  */
 function displayedQuestion(question) {
-  quizQuestion.innerText = question.question;
+  quizQuestion.innerHTML = question.question;
   //Once question is shown I want to create a button for each answer for the user to choose.
   //Will then populate the new buttons with the answer options & give them the class .answer so they refer to the options in HTML.
-  question.answers.forEach((answer) => {
+  quizArray.answers.forEach(() => {
     let button = document.createElement("button");
     button.innerText = answer.text;
     button.classList.add("answer-buttons");
     //Need to make the buttons created above go over the ones in the HTML &
-    //will need to add whether the button content is the correct answer or not, so will create fn for this.
+    //will need to add whether the button content is = answer.correct or not, so will create fn for this (userChoice).
+    answerChoices.appendChild(button);
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", userChoice);
   });
 }
 
+/**
+ * Using e as the parameter here as it represents the event in displayedQuestion, ln 652
+ */
+function userChoice(e) {}
+
 //Called function below so the quiz is setup and then calls the other fns
-setupQuiz();
+document.addEventListener("DOMContentLoaded", setupQuiz());
+
+startGame();
+
+//Here we should use the quizArray we created and display the 1st question in the array
+//I'll use the nextQuestion fn for this
+nextQuestion();
 
 //Create a way to go through quizArray and display each question
 //quizQuestion.innerHTML = quizArray[1].question;
