@@ -205,3 +205,13 @@ footer {
     background: white;
     color: rgba(88, 0, 153, 0.5);
 }
+
+/* Styles below will apply to user's selection and go green if the answer is correct, and red if incorrect */
+
+.correct {
+background: rgb(133, 214, 109);
+}
+
+.incorrect {
+    background: rgb(218, 84, 84);
+}

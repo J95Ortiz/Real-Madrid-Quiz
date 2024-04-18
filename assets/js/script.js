@@ -606,7 +606,7 @@ function nextQuestion() {
     //will need to add whether the button content is = answer.correct or not, so will create fn for this (userChoice).
     answerChoices.appendChild(button);
     if (answer.correct) {
-      button.dataset.correct = answer.correct;
+      button.dataset.correct = answer.correct; //Applies the correct part of the answers to the buttons created in ln 602
     }
     button.addEventListener("click", userChoice);
   });
@@ -626,17 +626,17 @@ function resetState() {
 /**
  * This function will work out whether the User's choice is correct or incorrect
  * Does this by matching the answer to whether correct = True or False
- * Use e as the fn parameter here as "e" represents the event in nextQuestion, ln 606
+ * Use e as the fn parameter here as "e" represents the event in nextQuestion, ln 611
  */
 function userChoice(e) {
   let chosenAnswer = e.target;
   let correctAnswer = chosenAnswer.dataset.correct === "true";
   if (correctAnswer) {
-    chosenAnswer.classList.add("correct");
+    chosenAnswer.classList.add("correct"); //Class added which will change colour once User makes their choice
     //and increase the score
     score++;
   } else {
-    chosenAnswer.classList.add("incorrect");
+    chosenAnswer.classList.add("incorrect"); //Class added which will change colour once User makes their choice
   }
 }
 
