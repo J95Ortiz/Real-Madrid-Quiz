@@ -592,6 +592,8 @@ function startGame() {
  * This applies the parameters from quizArray & currentQuestionNumber
  */
 function nextQuestion() {
+  //Calls the resetState function at the start so that the buttons in HTML are hidden when the new ones are created and added
+  resetState();
   let displayedQuestion = quizArray[currentQuestionNumber];
   quizQuestion.innerText = displayedQuestion.question;
   //Once question is shown I want to create a button for each answer for the user to choose.
@@ -638,10 +640,6 @@ function userChoice(e) {
   }
 }
 
-//Called function below so the quiz is setup and then calls the other fns
-document.addEventListener("DOMContentLoaded", setupQuiz());
-
-
 /**
  * Function created to reset the game once all the questions answered
  */
@@ -653,3 +651,6 @@ function resetGame() {}
 function gameScore() {
   //display a message saying: `You scored ${score} out of 10`
 }
+
+//Called function below so the quiz is setup and then calls the other fns
+document.addEventListener("DOMContentLoaded", setupQuiz());
