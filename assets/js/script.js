@@ -541,7 +541,7 @@ let quizQuestion = document.getElementById("question");
 let answerChoices = document.getElementById("ans-area");
 
 //Variable nextBtn will apply to the next button
-//Ideally this should be hidden until displayed question is answered
+//Ideally this should be hidden until displayed question is answered with resetState() fn
 //Will also be used to start quiz once all questions are answered
 let nextBtn = document.getElementById("next-btn");
 
@@ -580,6 +580,9 @@ function startGame() {
   currentQuestionNumber = 0;
   score = 0;
 
+  //Added below so that when user finishes, it will say replay
+  nextBtn.innerHTML = "Next";
+
   //Calls nextQuestion fn which will display the question and the answer options.
   nextQuestion();
 }
@@ -608,6 +611,17 @@ function nextQuestion() {
 }
 
 /**
+ * Function created to hide the next button until the question's been answered and for the buttons created above
+ * to show on top of the buttons already in HTML (removeChild)
+ */
+function resetState() {
+  nextBtn.style.display = "none";
+  while (answerChoices.firstChild) {
+    answerChoices.removeChild(answerChoices.firstChild);
+  }
+}
+
+/**
  * This function will work out whether the User's choice is correct or incorrect
  * Does this by matching the answer to whether correct = True or False
  * Use e as the fn parameter here as "e" represents the event in nextQuestion, ln 606
@@ -627,21 +641,6 @@ function userChoice(e) {
 //Called function below so the quiz is setup and then calls the other fns
 document.addEventListener("DOMContentLoaded", setupQuiz());
 
-startGame();
-
-//Here we should use the quizArray we created and display the 1st question in the array
-//I'll use the nextQuestion fn for this
-//nextQuestion();
-
-//Create a way to go through quizArray and display each question
-//quizQuestion.innerHTML = quizArray[1].question;
-//option1.innerHTML = quizArray[0].answers[0].text;
-
-//Uses currentQuestion as an index which will go from 0 to 9 as the quiz runs through the questions in the Array
-//let displayedQuestion = quizArray[currentQuestion];
-//console.log(displayedQuestion);
-//console.log(displayedQuestion.answers);
-//quizQuestion.innerHTML = displayedQuestion.question;
 
 /**
  * Function created to reset the game once all the questions answered
