@@ -638,10 +638,40 @@ function userChoice(e) {
   } else {
     chosenAnswer.classList.add("incorrect"); //Class added which will change colour once User makes their choice
   }
+  //Now go through answerChoices and its children and add the class "correct" if correct = true in the answerChoices array.
+  Array.from(answerChoices.children).forEach((button) => {
+    if (button.dataset.correct === "true") {
+      button.classList.add("correct");
+    }
+    //Now make the rest of the buttons unavailable for clicks
+    button.disabled = true;
+  });
+  //Now we want the next button to show
+  nextBtn.style.display = "block";
 }
 
+//Event Listener below and functions are so the computer works out if all the questions have been asked
+// If currentQuestionNumber is less than the questions in the quizArray, next question will pop up.
+// Otherwise message will show with score and "Next" is replaced with "Play Again".
+function displayNext() {
+  currentQuestionNumber++;
+  if (currentQuestionNumber < quizArray.length) {
+    nextQuestion();
+  } else {
+    gameScore();
+  }
+}
+
+nextBtn.addEventListener("click", () => {
+  if (currentQuestionNumber < quizArray.length) {
+    displayNext();
+  } else {
+    setupQuiz();
+  }
+});
+
 /**
- * Function created to reset the game once all the questions answered
+ * Function created to reset the game once all the questions answered ---- MAYBE UNNECESSARY???
  */
 function resetGame() {}
 
@@ -649,7 +679,18 @@ function resetGame() {}
  * Function to collate scores and show them on the screen
  */
 function gameScore() {
+  resetState();
   //display a message saying: `You scored ${score} out of 10`
+  if (score <= 5) {
+    quizQuestion.innerHTML = `Oh dear you scored less than Hazard! You're score is ${score} out of ${quizArray.length}!`;
+  } else if (score <= 7) {
+    quizQuestion.innerHTML = `Not bad! You scored ${score} out of ${quizArray.length}!`;
+  } else {
+    quizQuestion.innerHTML = `You're a true Galactico! You scored ${score} out of ${quizArray.length}!`;
+  }
+  
+  nextBtn.innerHTML = "Play again";
+  nextBtn.style.display = "block";
 }
 
 //Called function below so the quiz is setup and then calls the other fns
