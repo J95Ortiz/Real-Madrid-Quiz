@@ -565,22 +565,11 @@ function setupQuiz() {
   //Adds 10 random numbers between 0 & 49 to the array
   for (let i = 0; i < 10; i++) {
     randomNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
-    console.log(randomNumbers);
-    quizArray.push(questions[randomNumbers[i]]);
-    console.log(quizArray); //Builds an array with 10 Q's and their answers
+    quizArray.push(questions[randomNumbers[i]]); //These are pushed into the array
+    console.log(quizArray); //Links the array with the relevant Q's and their answers
   }
   startGame();
 }
-
-//Create a way to go through quizArray and display each question
-//quizQuestion.innerHTML = quizArray[1].question;
-//option1.innerHTML = quizArray[0].answers[0].text;
-//console.log(quizArray[0].answers[0].text);
-
-//Uses currentQuestion as an index which will go from 0 to 9 as the quiz runs through the questions in the Array
-//let displayedQuestion = quizArray[currentQuestion];
-//console.log(displayedQuestion);
-//console.log(displayedQuestion.answers);
 
 /**
  * Function created to run through the quiz once setupQuiz fn has ran
@@ -619,9 +608,21 @@ function nextQuestion() {
 }
 
 /**
- * Using e as the parameter here as it represents the event in displayedQuestion, ln 652
+ * This function will work out whether the User's choice is correct or incorrect
+ * Does this by matching the answer to whether correct = True or False
+ * Use e as the fn parameter here as "e" represents the event in nextQuestion, ln 606
  */
-function userChoice(e) {}
+function userChoice(e) {
+  let chosenAnswer = e.target;
+  let correctAnswer = chosenAnswer.dataset.correct === "true";
+  if (correctAnswer) {
+    chosenAnswer.classList.add("correct");
+    //and increase the score
+    score++;
+  } else {
+    chosenAnswer.classList.add("incorrect");
+  }
+}
 
 //Called function below so the quiz is setup and then calls the other fns
 document.addEventListener("DOMContentLoaded", setupQuiz());
@@ -641,11 +642,6 @@ startGame();
 //console.log(displayedQuestion);
 //console.log(displayedQuestion.answers);
 //quizQuestion.innerHTML = displayedQuestion.question;
-//option1.innerHTML = displayedQuestion.answers[0].text;
-//option2.innerHTML = displayedQuestion.answers[1];
-//option3.innerHTML = displayedQuestion.answers[2];
-//option4.innerHTML = displayedQuestion.answer;
-//console.log(option4);
 
 /**
  * Function created to reset the game once all the questions answered
@@ -658,7 +654,3 @@ function resetGame() {}
 function gameScore() {
   //display a message saying: `You scored ${score} out of 10`
 }
-
-//console.log(questionNumbers[i]); //logs the numbers in the array
-//console.log(questions[questionNumbers[i]].question); //gets the random number and assigns it the question corresponding to that number.
-//console.log(questions[questionNumbers[i]]);
