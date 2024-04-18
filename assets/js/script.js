@@ -537,13 +537,8 @@ let questions = [
 //Variable quizQuestion will display the question text in #question h2
 let quizQuestion = document.getElementById("question");
 
-//Variable option1, 2, 3 & 4 will display the potential answers in the .answer buttons
-let option1 = document.getElementsByClassName("option1");
-let option2 = document.getElementsByClassName("option2");
-let option3 = document.getElementsByClassName("option3");
-let option4 = document.getElementsByClassName("option4");
-
-let answerChoices = document.getElementsByClassName("answer-buttons");
+//Relates to the ans-area div, NOT THE BUTTONS!!!!
+let answerChoices = document.getElementById("ans-area");
 
 //Variable nextBtn will apply to the next button
 //Ideally this should be hidden until displayed question is answered
@@ -574,6 +569,7 @@ function setupQuiz() {
     quizArray.push(questions[randomNumbers[i]]);
     console.log(quizArray); //Builds an array with 10 Q's and their answers
   }
+  startGame();
 }
 
 //Create a way to go through quizArray and display each question
@@ -583,9 +579,8 @@ function setupQuiz() {
 
 //Uses currentQuestion as an index which will go from 0 to 9 as the quiz runs through the questions in the Array
 //let displayedQuestion = quizArray[currentQuestion];
-console.log(displayedQuestion);
-console.log(displayedQuestion.answers);
-console.log(option4);
+//console.log(displayedQuestion);
+//console.log(displayedQuestion.answers);
 
 /**
  * Function created to run through the quiz once setupQuiz fn has ran
@@ -594,6 +589,10 @@ function startGame() {
   //Need the fn to make currentQuestion = 0 each time the quiz starts,
   //so that the 1st question displayed is the 1st one in the array
   currentQuestionNumber = 0;
+  score = 0;
+
+  //Calls nextQuestion fn which will display the question and the answer options.
+  nextQuestion();
 }
 
 /**
@@ -601,19 +600,13 @@ function startGame() {
  * This applies the parameters from quizArray & currentQuestionNumber
  */
 function nextQuestion() {
-  displayedQuestion(quizArray[currentQuestionNumber]);
-}
-
-/**
- * This function ensures that the displayed question and the answers in quizArray all show
- */
-function displayedQuestion(question) {
-  quizQuestion.innerHTML = question.question;
+  let displayedQuestion = quizArray[currentQuestionNumber];
+  quizQuestion.innerText = displayedQuestion.question;
   //Once question is shown I want to create a button for each answer for the user to choose.
   //Will then populate the new buttons with the answer options & give them the class .answer so they refer to the options in HTML.
-  quizArray.answers.forEach(() => {
+  displayedQuestion.answers.forEach((answer) => {
     let button = document.createElement("button");
-    button.innerText = answer.text;
+    button.innerHTML = answer.text;
     button.classList.add("answer-buttons");
     //Need to make the buttons created above go over the ones in the HTML &
     //will need to add whether the button content is = answer.correct or not, so will create fn for this (userChoice).
@@ -637,7 +630,7 @@ startGame();
 
 //Here we should use the quizArray we created and display the 1st question in the array
 //I'll use the nextQuestion fn for this
-nextQuestion();
+//nextQuestion();
 
 //Create a way to go through quizArray and display each question
 //quizQuestion.innerHTML = quizArray[1].question;
