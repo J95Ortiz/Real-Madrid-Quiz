@@ -38,7 +38,7 @@ let questions = [
   },
   {
     rank: 4,
-    question: "4 Who has won more La Liga Titles?",
+    question: "Who has won more La Liga Titles?",
     answers: [
       { text: "Cristiano Ronaldo", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -48,7 +48,7 @@ let questions = [
   },
   {
     rank: 5,
-    question: "5 Who has made more competitive appearances for Madrid?",
+    question: "Who has made more competitive appearances for Madrid?",
     answers: [
       { text: "Sergio Ramos", correct: false },
       { text: "Iker Casillas", correct: true },
@@ -58,7 +58,7 @@ let questions = [
   },
   {
     rank: 6,
-    question: "6 Who was Real Madrid captain for longer",
+    question: "Who was Real Madrid captain for longer",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -68,7 +68,7 @@ let questions = [
   },
   {
     rank: 7,
-    question: "7 Who scored more Champions League goals?",
+    question: "Who scored more Champions League goals?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Zidane", correct: false },
@@ -79,7 +79,7 @@ let questions = [
   {
     rank: 8,
     question:
-      "8 Real Madrid has played its home matches in which stadium since 1947?",
+      "Real Madrid has played its home matches in which stadium since 1947?",
     answers: [
       { text: "Santiago Bernabeu", correct: true },
       { text: "Montjuic", correct: false },
@@ -89,7 +89,7 @@ let questions = [
   },
   {
     rank: 9,
-    question: "9 What is Madrid's most common nickname?",
+    question: "What is Madrid's most common nickname?",
     answers: [
       { text: "Los Blancos", correct: true },
       { text: "Los Rallados", correct: false },
@@ -100,7 +100,7 @@ let questions = [
   {
     rank: 10,
     question:
-      "10 Real Madrid played home matches for the 2019/20 season at which small venue while their regular stadium was being renovated?",
+      "Real Madrid played home matches for the 2019/20 season at which small venue while their regular stadium was being renovated?",
     answers: [
       { text: "Alfredo di Stefano Stadium", correct: true },
       { text: "Montjuic Stadium", correct: false },
@@ -122,7 +122,7 @@ let questions = [
   {
     rank: 12,
     question:
-      "12 Cristiano Ronaldo is the all-time leading goalscorer with how many goals in all competitions?",
+      "Cristiano Ronaldo is the all-time leading goalscorer with how many goals in all competitions?",
     answers: [
       { text: "450", correct: true },
       { text: "323", correct: false },
@@ -133,7 +133,7 @@ let questions = [
   {
     rank: 13,
     question:
-      "13 Which player spent 16 years of his career playing for Real Madrid and scored 323 goals during his career at the club?",
+      "Which player spent 16 years of his career playing for Real Madrid and scored 323 goals during his career at the club?",
     answers: [
       { text: "Sergio Ramos", correct: true },
       { text: "Zidane", correct: false },
@@ -143,7 +143,7 @@ let questions = [
   },
   {
     rank: 14,
-    question: "14 Can you name the oldest player to ever play for Real Madrid?",
+    question: "Can you name the oldest player to ever play for Real Madrid?",
     answers: [
       { text: "Alfredo di Stefano", correct: true },
       { text: "Luka Modric", correct: false },
@@ -154,7 +154,7 @@ let questions = [
   {
     rank: 15,
     question:
-      "15 As of 2024, how many European Cups/Champions Leagues have Real Madrid won?",
+      "As of 2024, how many European Cups/Champions Leagues have Real Madrid won?",
     answers: [
       { text: "14", correct: true },
       { text: "11", correct: false },
@@ -165,7 +165,7 @@ let questions = [
   {
     rank: 16,
     question:
-      "16 In July 2000, who made a surprising 62 million Euros move to Real Madrid?",
+      "In July 2000, who made a surprising 62 million Euros move to Real Madrid?",
     answers: [
       { text: "Luis Figo", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -175,7 +175,7 @@ let questions = [
   },
   {
     rank: 17,
-    question: "17 Which player is the oldest member in the current squad?",
+    question: "Which player is the oldest member in the current squad?",
     answers: [
       { text: "Sergio Ramos", correct: false },
       { text: "Luka Modric", correct: true },
@@ -186,7 +186,7 @@ let questions = [
   {
     rank: 18,
     question:
-      "18 Which Argentine born player was instrumental in the domination of the European Cup and La Liga during the 1950s?",
+      "Which Argentine born player was instrumental in the domination of the European Cup and La Liga during the 1950s?",
     answers: [
       { text: "Alfredo di Stefano", correct: true },
       { text: "Julian Alvarez", correct: false },
@@ -196,7 +196,7 @@ let questions = [
   },
   {
     rank: 19,
-    question: "19 Gareth Bale was signed for 101 million Euros in which year?",
+    question: "Gareth Bale was signed for 101 million Euros in which year?",
     answers: [
       { text: "2013", correct: true },
       { text: "2012", correct: false },
@@ -206,8 +206,7 @@ let questions = [
   },
   {
     rank: 20,
-    question:
-      "20 Gareth Bale was signed for 101 million Euros from which Club?",
+    question: "Gareth Bale was signed for 101 million Euros from which Club?",
     answers: [
       { text: "Tottenham", correct: true },
       { text: "Chelsea", correct: false },
@@ -218,7 +217,7 @@ let questions = [
   {
     rank: 21,
     question:
-      "21 What number shirt did David Beckham wear, citing his admiration of basketball player Michael Jordan who also wore this number shirt?",
+      "What number shirt did David Beckham wear, citing his admiration of basketball player Michael Jordan who also wore this number shirt?",
     answers: [
       { text: "23", correct: true },
       { text: "5", correct: false },
@@ -229,7 +228,7 @@ let questions = [
   {
     rank: 22,
     question:
-      "22 What name is given to any match between rivals FC Barcelona and Real Madrid?",
+      "What name is given to any match between rivals FC Barcelona and Real Madrid?",
     answers: [
       { text: "El Clasico", correct: true },
       { text: "Der Klassiker", correct: false },
@@ -240,7 +239,7 @@ let questions = [
   {
     rank: 23,
     question:
-      "23 Which legendary Brazilian left back scored 68 goals in 527 appearances for Madrid between 1996 and 2007?",
+      "Which legendary Brazilian left back scored 68 goals in 527 appearances for Madrid between 1996 and 2007?",
     answers: [
       { text: "Roberto Carlos", correct: true },
       { text: "Marcelo", correct: false },
@@ -251,7 +250,7 @@ let questions = [
   {
     rank: 24,
     question:
-      "24 What word was once used to describe expensive Real Madrid football players and is now often used for a select list of football superstars in any team??",
+      "What word was once used to describe expensive Real Madrid football players and is now often used for a select list of football superstars in any team??",
     answers: [
       { text: "Los Galacticos", correct: true },
       { text: "Las Estrellas", correct: false },
@@ -262,7 +261,7 @@ let questions = [
   {
     rank: 25,
     question:
-      "25 On 22 May 2012, who signed a new four-year contract to remain as Real Madrid manager through to 2016?",
+      "On 22 May 2012, who signed a new four-year contract to remain as Real Madrid manager through to 2016?",
     answers: [
       { text: "Jose Mourinho", correct: true },
       { text: "Julen Lopetegui", correct: false },
@@ -273,7 +272,7 @@ let questions = [
   {
     rank: 26,
     question:
-      "26 In the 2018 UEFA Champions League Final what was the score between Real Madrid and Liverpool?",
+      "In the 2018 UEFA Champions League Final what was the score between Real Madrid and Liverpool?",
     answers: [
       { text: "3-1", correct: true },
       { text: "1-0", correct: false },
@@ -284,7 +283,7 @@ let questions = [
   {
     rank: 27,
     question:
-      "27 David Beckham was the third Englishman to play for Real Madrid, who was the first?",
+      "David Beckham was the third Englishman to play for Real Madrid, who was the first?",
     answers: [
       { text: "Laurie Cunningham", correct: true },
       { text: "Steve McManaman", correct: false },
@@ -295,7 +294,7 @@ let questions = [
   {
     rank: 28,
     question:
-      "28 David Beckham was the third Englishman to play for Real Madrid, who was the second?",
+      "David Beckham was the third Englishman to play for Real Madrid, who was the second?",
     answers: [
       { text: "Steve McManaman", correct: true },
       { text: "Laurie Cunningham", correct: false },
@@ -306,7 +305,7 @@ let questions = [
   {
     rank: 29,
     question:
-      "29 Which goalkeeper made his debut in 1999 and went on to make 725 appearances for Madrid?",
+      "Which goalkeeper made his debut in 1999 and went on to make 725 appearances for Madrid?",
     answers: [
       { text: "Iker Casillas", correct: true },
       { text: "Thibault Courtois", correct: false },
@@ -317,7 +316,7 @@ let questions = [
   {
     rank: 30,
     question:
-      "30 Which player made his debut on 22 September 2005 when he famously scored an own goal before being sent off against Athletic Bilbao?",
+      "Which player made his debut on 22 September 2005 when he famously scored an own goal before being sent off against Athletic Bilbao?",
     answers: [
       { text: "Laurie Cunningham", correct: false },
       { text: "Steve McManaman", correct: false },
@@ -327,7 +326,7 @@ let questions = [
   },
   {
     rank: 31,
-    question: "31 In which year was Real Madrid founded?",
+    question: "In which year was Real Madrid founded?",
     answers: [
       { text: "1891", correct: true },
       { text: "1957", correct: false },
@@ -337,7 +336,7 @@ let questions = [
   },
   {
     rank: 32,
-    question: "32 Who is the current Real Madrid Manager?",
+    question: "Who is the current Real Madrid Manager?",
     answers: [
       { text: "Carlo Ancelotti", correct: true },
       { text: "Zidane", correct: false },
@@ -347,7 +346,7 @@ let questions = [
   },
   {
     rank: 33,
-    question: "33 What is the name of the Real Madrid youth academy?",
+    question: "What is the name of the Real Madrid youth academy?",
     answers: [
       { text: "La Fabrica", correct: true },
       { text: "La Masia", correct: false },
@@ -357,7 +356,7 @@ let questions = [
   },
   {
     rank: 34,
-    question: "34 How many Copa del Rey titles has Real Madrid won?",
+    question: "How many Copa del Rey titles has Real Madrid won?",
     answers: [
       { text: "18", correct: true },
       { text: "16", correct: false },
@@ -367,7 +366,7 @@ let questions = [
   },
   {
     rank: 35,
-    question: "35 Who was the first foreign manager at Real Madrid?",
+    question: "Who was the first foreign manager at Real Madrid?",
     answers: [
       { text: "John Toshack", correct: true },
       { text: "Carlo Ancelotti", correct: false },
@@ -377,7 +376,7 @@ let questions = [
   },
   {
     rank: 36,
-    question: "36 What is the name of the women's football team?",
+    question: "What is the name of the women's football team?",
     answers: [
       { text: "Real Madrid CF Femenino", correct: true },
       { text: "Real Femenino", correct: false },
@@ -387,7 +386,7 @@ let questions = [
   },
   {
     rank: 37,
-    question: "37 Who was Real Madrid's first ever Ballon d'Or winner?",
+    question: "Who was Real Madrid's first ever Ballon d'Or winner?",
     answers: [
       { text: "Alfredo di Stefano", correct: true },
       { text: "Luka Modric", correct: false },
@@ -397,7 +396,7 @@ let questions = [
   },
   {
     rank: 38,
-    question: "38 Who was Real Madrid’s last Ballon d’or winner?",
+    question: "Who was Real Madrid’s last Ballon d’or winner?",
     answers: [
       { text: "Alfredo di Stefano", correct: false },
       { text: "Luka Modric", correct: true },
@@ -408,7 +407,7 @@ let questions = [
   {
     rank: 39,
     question:
-      "39 Which manager won 3 successive Champions Leagues with Real Madrid?",
+      "Which manager won 3 successive Champions Leagues with Real Madrid?",
     answers: [
       { text: "John Toshack", correct: false },
       { text: "Carlo Ancelotti", correct: false },
@@ -418,7 +417,7 @@ let questions = [
   },
   {
     rank: 40,
-    question: "40 Who are Real Madrid’s main kit manufacturer?",
+    question: "Who are Real Madrid’s main kit manufacturer?",
     answers: [
       { text: "Adidas", correct: true },
       { text: "New Balance", correct: false },
@@ -428,7 +427,7 @@ let questions = [
   },
   {
     rank: 41,
-    question: "41 What is the record attendance for a Real Madrid match?",
+    question: "What is the record attendance for a Real Madrid match?",
     answers: [
       { text: "129,690", correct: true },
       { text: "87,800", correct: false },
@@ -438,7 +437,7 @@ let questions = [
   },
   {
     rank: 42,
-    question: "42 How many la liga titles have Madrid won?",
+    question: "How many la liga titles have Madrid won?",
     answers: [
       { text: "35", correct: true },
       { text: "45", correct: false },
@@ -449,7 +448,7 @@ let questions = [
   {
     rank: 43,
     question:
-      "43 Which ex Real Madrid manager went on to win a world cup and the euros with the Spanish National Team?",
+      "Which ex Real Madrid manager went on to win a world cup and the euros with the Spanish National Team?",
     answers: [
       { text: "Vicente del Bosque", correct: true },
       { text: "Carlo Ancelotti", correct: false },
@@ -459,7 +458,7 @@ let questions = [
   },
   {
     rank: 44,
-    question: "44 In which year did Cristiano Ronaldo sign for Madrid?",
+    question: "In which year did Cristiano Ronaldo sign for Madrid?",
     answers: [
       { text: "2008", correct: true },
       { text: "2007", correct: false },
@@ -470,7 +469,7 @@ let questions = [
   {
     rank: 45,
     question:
-      "45 Which ex Real Madrid defender is 41 and still plays in Portugal?",
+      "Which ex Real Madrid defender is 41 and still plays in Portugal?",
     answers: [
       { text: "Sergio Ramos", correct: false },
       { text: "Iker Casillas", correct: false },
@@ -481,7 +480,7 @@ let questions = [
   {
     rank: 46,
     question:
-      "46 What position did Sergio Ramos play in before he was moved to central defense?",
+      "What position did Sergio Ramos play in before he was moved to central defense?",
     answers: [
       { text: "Right Back", correct: true },
       { text: "Left Back", correct: false },
@@ -491,8 +490,7 @@ let questions = [
   },
   {
     rank: 47,
-    question:
-      "47 Which player became the 7th Brit to play for the club in 2023?",
+    question: "Which player became the 7th Brit to play for the club in 2023?",
     answers: [
       { text: "Jude Bellingham", correct: true },
       { text: "Marcus Rashford", correct: false },
@@ -502,7 +500,7 @@ let questions = [
   },
   {
     rank: 48,
-    question: "48 Who is the current president at Real Madrid?",
+    question: "Who is the current president at Real Madrid?",
     answers: [
       { text: "Florentino Perez", correct: true },
       { text: "Daniel Levy", correct: false },
@@ -513,7 +511,7 @@ let questions = [
   {
     rank: 49,
     question:
-      "49 Which manager was sacked by the Spanish Federation after he agreed to coach Real before the 2018 World Cup?",
+      "Which manager was sacked by the Spanish Federation after he agreed to coach Real before the 2018 World Cup?",
     answers: [
       { text: "Julen Lopetegui", correct: true },
       { text: "Luis Aragones", correct: false },
@@ -524,7 +522,7 @@ let questions = [
   {
     rank: 50,
     question:
-      "50 Which ex Real Madrid Midfielder went on to win the German Bundesliga with Bayer Leverkusen?",
+      "Which ex Real Madrid Midfielder went on to win the German Bundesliga with Bayer Leverkusen?",
     answers: [
       { text: "Xabi Alonso", correct: true },
       { text: "Iker Casillas", correct: false },
@@ -671,11 +669,6 @@ nextBtn.addEventListener("click", () => {
 });
 
 /**
- * Function created to reset the game once all the questions answered ---- MAYBE UNNECESSARY???
- */
-function resetGame() {}
-
-/**
  * Function to collate scores and show them on the screen
  */
 function gameScore() {
@@ -688,7 +681,7 @@ function gameScore() {
   } else {
     quizQuestion.innerHTML = `You're a true Galactico! You scored ${score} out of ${quizArray.length}!`;
   }
-  
+
   nextBtn.innerHTML = "Play again";
   nextBtn.style.display = "block";
 }
