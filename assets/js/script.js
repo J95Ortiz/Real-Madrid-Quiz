@@ -660,14 +660,6 @@ function displayNext() {
   }
 }
 
-nextBtn.addEventListener("click", () => {
-  if (currentQuestionNumber < quizArray.length) {
-    displayNext();
-  } else {
-    setupQuiz();
-  }
-});
-
 /**
  * Function to collate scores and show them on the screen
  */
@@ -686,5 +678,12 @@ function gameScore() {
   nextBtn.style.display = "block";
 }
 
-//Called function below so the quiz is setup and then calls the other fns
-document.addEventListener("DOMContentLoaded", setupQuiz());
+nextBtn.addEventListener("click", () => {
+  if (currentQuestionNumber < quizArray.length) {
+    displayNext();
+  } else {
+    setupQuiz();
+  }
+});
+
+setupQuiz();

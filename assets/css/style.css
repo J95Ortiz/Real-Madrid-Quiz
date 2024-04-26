@@ -1,4 +1,4 @@
-/* Copied the below code from the main Real Madrid Project as will look to link the two together */
+/* Copied the below code from the main Real Madrid Project as will look to link the two together in future */
 /* * Selector to apply to ALL styles */
 * {
     padding: 0;
@@ -18,6 +18,8 @@ ul {
     list-style-type: none;
 }
 
+/* Deleted styles for nav menu and drop down as not needed currently, but will need to readd once the two projects have been linked */
+
 /* Header */
 header {
     background-color: black;
@@ -26,7 +28,7 @@ header {
     display: flex;
     position: fixed;
     max-height: 5em;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 999;
     border-bottom: 1px solid slateblue;
@@ -53,47 +55,6 @@ header a {
     text-align: center;
     flex-wrap: wrap;
     padding: 6px;
-}
-
-/* Styles for the Nav Menu */
-#menu {
-    display: block;
-    list-style-type: none;
-}
-
-#menu>li {
-    padding: 5px;
-    position: relative;
-}
-
-.active {
-    border-bottom: 1px solid slateblue;
-    /* Adds a line under the active page */
-}
-
-/*  Navbar styles for dropdown toggle */
-nav {
-    position: absolute;
-    right: 0;
-    padding: 6px;
-    display: none;
-    background-color: black;
-    width: fit-content;
-    top: 100%;
-}
-
-/* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
-    padding: 6px 1rem;
 }
 
 /* Main Content */
