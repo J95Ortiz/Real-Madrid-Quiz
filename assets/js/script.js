@@ -682,7 +682,7 @@ nextBtn.addEventListener("click", () => {
   if (currentQuestionNumber < quizArray.length) {
     displayNext();
   } else {
-    setupQuiz();
+    location.reload();
   }
 });
 
