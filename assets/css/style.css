@@ -100,6 +100,23 @@ footer {
     padding: 5px;
 }
 
+/* INDEX PAGE */
+.game-area p {
+    padding: 1%;
+}
+
+#start {
+    align-self: center;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+    background-color: rgba(88, 0, 153, 0.5);
+    border: 1px solid gold;
+    border-radius: 5px;
+    font-weight: bolder;
+    width: 25%;
+}
+
 /* QUIZ PAGE */
 /* Styles the Quiz Section so it appears central and applies a border */
 .game-area {

@@ -1,3 +1,4 @@
+<!--Copied the below code from the main Real Madrid Project as will look to link the two together -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -54,22 +55,28 @@
           alt="An image of Real Madrid's Crest which can return the user to the main page if clicked on"
         />
       </a>
-      <a href="index.html">
+      <a href="home.html">
         <h1 id="logo2">REAL MADRID CLUB DE FUTBOL</h1>
       </a>
       <!-- Removed the dropdown links so will need to readd these below when linking the two projects -->
     </header>
 
-    <!-- Quiz Instrution Section -->
+    <!-- Quiz Game Section -->
     <main>
+      <!-- .game-area is main quiz section -->
       <div class="game-area">
         <h1>Real Madrid Quiz</h1>
-        <p>Take the Quiz and test your Real Madrid knowledge!</p>
-        <p>
-          Answer 10 questions about the Merengues and see whether you're a
-          Galactico
-        </p>
-        <a id="start" href="quiz.html">Play the Quiz</a>
+        <!-- .central-area is the section with the questions, answer options & #next-btn  -->
+        <div class="central-area">
+          <h2 id="question">Question</h2>
+          <div id="ans-area">
+            <button class="answer-buttons option1">Answer</button>
+            <button class="answer-buttons option2">Answer</button
+            ><button class="answer-buttons option3">Answer</button
+            ><button class="answer-buttons option4">Answer</button>
+          </div>
+          <button id="next-btn">Next</button>
+        </div>
       </div>
     </main>
 
@@ -129,5 +136,6 @@
       src="https://kit.fontawesome.com/9e2b843046.js"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
