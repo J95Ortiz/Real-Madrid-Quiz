@@ -1,202 +1,248 @@
 /* Copied the below code from the main Real Madrid Project as will look to link the two together in future */
 /* * Selector to apply to ALL styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* GENERAL STYLES */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Added below to avoid having to repeat throughout */
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* Deleted styles for nav menu and drop down as not needed currently, but will need to readd once the two projects have been linked */
 
 /* Header */
 header {
-    background-color: black;
-    color: white;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    max-height: 5em;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    border-bottom: 1px solid slateblue;
-    /* Added slight bottom border to header to distinguish it easier */
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  max-height: 5em;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  border-bottom: 1px solid slateblue;
+  /* Added slight bottom border to header to distinguish it easier */
 }
 
 header a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Styles for the Logo IMAGE */
 #logo {
-    padding: 6px;
-    margin-top: 1px;
-    /* Turns #logo into a circle */
-    border-radius: 50%;
+  padding: 6px;
+  margin-top: 1px;
+  /* Turns #logo into a circle */
+  border-radius: 50%;
 }
 
 /* Styles for the Logo TEXT */
 #logo2 {
-    font-size: large;
-    align-self: center;
-    text-align: center;
-    flex-wrap: wrap;
-    padding: 6px;
+  font-size: large;
+  align-self: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 6px;
 }
 
 /* Main Content */
 main {
-    background: url("../images/cover2.png") fixed center/cover;
-    /* Real Madrid Logo set as background */
-    background-size: 500px;
-    margin-top: 4em;
-    background-color: rgb(29, 51, 97);
-    /* Style below added to push footer to the bottom of the page */
-    flex: 1 0 auto;
+  background: url("../images/cover2.png") fixed center/cover;
+  /* Real Madrid Logo set as background */
+  background-size: 700px;
+  margin-top: 4em;
+  background-color: rgba(29, 51, 97, 1);
+  /* Style below added to push footer to the bottom of the page */
+  flex: 1 0 auto;
 
-    /* Top margin applied to main to push content below Header and keep it on top of the footer */
-    margin-top: 77px;
-    margin-bottom: 3em;
+  /* Top margin applied to main to push content below Header and keep it on top of the footer */
+  margin-top: 77px;
+  margin-bottom: 3em;
 }
 
 /* Footer */
 /* Styles added to ensure footer is fixed and sticks to the bottom of the page */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    margin-top: auto;
-    background-color: black;
-    min-height: 3em;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  margin-top: auto;
+  background-color: black;
+  min-height: 3em;
 }
 
 #social {
-    text-align: center;
-    padding: 5px;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    border-top: 1px solid slategray;
-    /* Added little border on the top so footer stands out due to BG image's color */
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  border-top: 1px solid slategray;
+  /* Added little border on the top so footer stands out due to BG image's color */
 }
 
 /* Below styles added to i elements so they look better in the footer */
 #social i {
-    font-size: 160%;
-    color: white;
-    padding: 5px;
+  font-size: 160%;
+  color: white;
+  padding: 5px;
+}
+
+/* Combined Styles */
+.instructions,
+.game-area {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid gold;
+  width: 85%;
+  max-height: 900px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30%;
+  border-radius: 10px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
 }
 
 /* INDEX PAGE */
 .instructions {
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .instructions p {
-    padding: 2%;
-    }
+  padding: 1%;
+  font-weight: bold;
+  line-height: 18px;
+}
 
 #start {
-    align-self: center;
-    margin: 1%;
-    padding: 1%;
-    color: white;
-    background-color: rgba(88, 0, 153, 0.5);
-    border: 1px solid gold;
-    border-radius: 5px;
-    font-weight: bolder;
-    width: 25%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: 1%;
+  padding: 1%;
+  color: white;
+  background-color: rgba(88, 0, 153, 0.5);
+  border: 1px solid gold;
+  border-radius: 5px;
+  font-weight: bolder;
+  width: 25%;
+}
+
+#start a {
+  display: flex;
+  align-self: center;
+  margin: 1%;
+  padding: 1%;
+  color: white;
 }
 
 /* QUIZ PAGE */
 /* Styles the Quiz Section so it appears central and applies a border */
-.game-area, .instructions {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid gold;
-    width: 85%;
-    max-height: 450px;
-    max-width: 900px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    text-align: center;
-    align-self: center;
-    justify-content: center;
-}
-
 .game-area {
-    padding: 1%;
+  padding: 1%;
+  margin: 100px auto 0;
+  margin-top: 260px;
 }
 
 /* Spaces out the header and gives it aq bottom border thinner than the quiz section border */
-.game-area h1, .instructions h1 {
-    border-bottom: 2px solid gold;
-    padding: 1%;
+.game-area h1,
+.instructions h1 {
+  border-bottom: 2px solid gold;
+  padding: 1%;
 }
 
 /* Styles the question and answer area */
 .central-area {
-    padding: 1%;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+/* Styles for the quiz questions */
+#question {
+  font-size: large;
+  padding: 1%;
 }
 
 /* Styles the Answer options, will add colour to them later on for correct and wrong answers */
 .answer-buttons {
-    width: 90%;
-    margin: 1%;
-    padding: 1%;
-    font-weight: bolder;
-    border: 0.5px solid gold;
-    border-radius: 5px;
-    transition: all 0.3s;
+  width: 90%;
+  margin: 1%;
+  padding: 1%;
+  font-weight: bolder;
+  border: 0.5px solid gold;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 
 .answer-buttons:hover {
-    background: black;
-    color:white;
+  background: black;
+  color: white;
 }
 
 /* Styles the next-btn, will style to look similar to the lotto submit button */
 #next-btn {
-    align-self: center;
-    margin: 1%;
-    padding: 1%;
-    color: white;
-    background-color: rgba(88, 0, 153, 0.5);
-    border: 1px solid gold;
-    border-radius: 5px;
-    font-weight: bolder;
-    width: 25%;
-    transition: all 0.3s;
+  align-self: center;
+  margin: 1%;
+  padding: 1%;
+  color: white;
+  background-color: rgba(88, 0, 153, 0.5);
+  border: 1px solid gold;
+  border-radius: 5px;
+  font-weight: bolder;
+  width: 25%;
+  transition: all 0.3s;
 }
 
 #next-btn:hover {
-    background: white;
-    color: rgba(88, 0, 153, 0.5);
+  background: white;
+  color: rgba(88, 0, 153, 0.5);
 }
 
 /* Styles below will apply to user's selection and go green if the answer is correct, and red if incorrect */
-
 .correct {
-background: rgb(133, 214, 109);
+  background: rgb(133, 214, 109);
 }
 
 .incorrect {
-    background: rgb(218, 84, 84);
+  background: rgb(218, 84, 84);
+}
+
+/* Media Styles for Phones */
+@media screen and (max-width: 412px) {
+  .instructions,
+  .game-area {
+    margin-top: 70%;
+    height: fit-content;
+    padding-bottom: 7px;
+  }
+
+  .instructions h1 {
+    margin-bottom: 7px;
+  }
+
+  .instructions p {
+    margin-bottom: 2%;
+  }
+
+  #start {
+    width: 40%;
+  }
 }
