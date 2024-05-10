@@ -597,7 +597,13 @@ function nextQuestion() {
   //Calls the resetState function at the start so that the buttons in HTML are hidden when the new ones are created and added
   resetState();
   let displayedQuestion = quizArray[currentQuestionNumber];
-  quizQuestion.innerText = displayedQuestion.question;
+  quizQuestion.innerText =
+    currentQuestionNumber +
+    1 +
+    "/" +
+    quizArray.length +
+    " " +
+    displayedQuestion.question;
   //Once question is shown I want to create a button for each answer for the user to choose.
   //Will then populate the new buttons with the answer options & give them the class .answer so they refer to the options in HTML.
   displayedQuestion.answers.forEach((answer) => {
