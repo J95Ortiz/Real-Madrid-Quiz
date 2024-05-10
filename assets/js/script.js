@@ -562,13 +562,15 @@ let quizArray = [];
 function setupQuiz() {
   //Adds 10 random numbers between 0 & 49 to the array
   for (let i = 0; i < 10; i++) {
-    randomNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
-    console.log(randomNumbers);
-    //go through array and swap out duplicates
+    //10 random numbers created
+    randomNumbers[i] = Math.floor(Math.random() * 49);
 
-    quizArray.push(questions[randomNumbers[i]]); //These are pushed into the array
+    //These are pushed into the quiz array
+    //Links the array with the relevant Q's and their answers
+    quizArray.push(questions[randomNumbers[i]]);
 
-    console.log(quizArray); //Links the array with the relevant Q's and their answers
+    //Code added for testing purposes, remove before submission.
+    console.log(quizArray);
   }
   startGame();
 }
