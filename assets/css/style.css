@@ -101,9 +101,13 @@ footer {
 }
 
 /* INDEX PAGE */
-.game-area p {
-    padding: 1%;
+.instructions {
+    padding-bottom: 20px;
 }
+
+.instructions p {
+    padding: 2%;
+    }
 
 #start {
     align-self: center;
@@ -119,12 +123,11 @@ footer {
 
 /* QUIZ PAGE */
 /* Styles the Quiz Section so it appears central and applies a border */
-.game-area {
+.game-area, .instructions {
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
     border: solid gold;
     width: 85%;
-    padding: 1%;
     max-height: 450px;
     max-width: 900px;
     margin: 100px auto 0;
@@ -134,8 +137,12 @@ footer {
     justify-content: center;
 }
 
+.game-area {
+    padding: 1%;
+}
+
 /* Spaces out the header and gives it aq bottom border thinner than the quiz section border */
-.game-area h1 {
+.game-area h1, .instructions h1 {
     border-bottom: 2px solid gold;
     padding: 1%;
 }
