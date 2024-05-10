@@ -563,7 +563,11 @@ function setupQuiz() {
   //Adds 10 random numbers between 0 & 49 to the array
   for (let i = 0; i < 10; i++) {
     randomNumbers[i] = Math.floor(Math.random() * 49); //10 random numbers created
+    console.log(randomNumbers);
+    //go through array and swap out duplicates
+
     quizArray.push(questions[randomNumbers[i]]); //These are pushed into the array
+
     console.log(quizArray); //Links the array with the relevant Q's and their answers
   }
   startGame();
