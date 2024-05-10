@@ -181,8 +181,9 @@ footer {
   padding: 1%;
 }
 
-/* Styles the Answer options, will add colour to them later on for correct and wrong answers */
+/* Styles the Answer options */
 .answer-buttons {
+  color: black;
   width: 90%;
   margin: 1%;
   padding: 1%;
@@ -208,7 +209,7 @@ footer {
   border-radius: 5px;
   font-weight: bolder;
   width: 25%;
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 #next-btn:hover {
@@ -218,11 +219,11 @@ footer {
 
 /* Styles below will apply to user's selection and go green if the answer is correct, and red if incorrect */
 .correct {
-  background: rgb(133, 214, 109);
+  background: rgba(133, 214, 109, 0.75);
 }
 
 .incorrect {
-  background: rgb(218, 84, 84);
+  background: rgba(218, 84, 84, 0.75);
 }
 
 /* Media Styles for Phones */
