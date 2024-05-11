@@ -105,14 +105,13 @@ footer {
 /* Media Styles for Phones (S, M & L) - Portrait Mode */
 .instructions,
 .game-area {
-  min-height: fit-content;
-  margin-top: 20%;
+  height: fit-content;
   max-height: 520px;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   border: solid gold;
   width: 85%;
-  height: fit-content;
+
   max-width: 600px;
   margin: auto;
   border-radius: 10px;
@@ -236,13 +235,6 @@ footer {
     margin: 2%;
     width: 30%;
   }
-
-  /* QUIZ PAGE */
-  /* Styles the next-btn, will style to look similar to the lotto submit button */
-  #next-btn:hover {
-    background: white;
-    color: rgba(88, 0, 153, 0.5);
-  }
 }
 
 /* Media Styles for Laptops (992px +)  */
@@ -253,23 +245,10 @@ footer {
     margin-top: 0px;
   }
 
-  #start a {
-    display: flex;
-    align-self: center;
-    margin: 1%;
-    padding: 1%;
-    color: white;
-  }
-
   /* QUIZ PAGE */
   /* Styles the question and answer area */
   .game-area {
     margin: auto;
-  }
-
-  #next-btn:hover {
-    background: white;
-    color: rgba(88, 0, 153, 0.5);
   }
 }
 
@@ -277,84 +256,43 @@ footer {
 @media screen and (min-width: 1024px) {
   /* INDEX PAGE */
   .instructions p {
-    padding: 1%;
-    font-weight: bold;
-    line-height: 18px;
+    font-size: larger;
+    padding: 2%;
   }
 
   #start {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin: 1%;
-    padding: 1%;
-    color: white;
-    background-color: rgba(88, 0, 153, 0.5);
-    border: 1px solid gold;
-    border-radius: 5px;
-    font-weight: bolder;
     width: 25%;
-  }
-
-  #start a {
-    display: flex;
-    align-self: center;
-    margin: 1%;
-    padding: 1%;
-    color: white;
-  }
-
-  /* QUIZ PAGE */
-  .answer-buttons:hover {
-    background: black;
-    color: white;
-  }
-
-  #next-btn:hover {
-    background: white;
-    color: rgba(88, 0, 153, 0.5);
   }
 }
 
-/* Media Styles for Laptops (1440px +)  */
-@media screen and (min-width: 1440px) {
-  .instructions p {
-    padding: 1%;
-    font-weight: bold;
-    line-height: 18px;
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .instructions,
+  .game-area {
+    width: 62%;
+    margin: auto;
+    font-size: medium;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    justify-content: space-evenly;
+    flex-grow: 0.5;
   }
 
   #start {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin: 1%;
-    padding: 1%;
-    color: white;
-    background-color: rgba(88, 0, 153, 0.5);
-    border: 1px solid gold;
-    border-radius: 5px;
-    font-weight: bolder;
-    width: 25%;
+    margin-top: 1%;
   }
 
-  #start a {
-    display: flex;
-    align-self: center;
-    margin: 1%;
-    padding: 1%;
-    color: white;
+  .game-area h1 {
+    font-size: 25px;
   }
 
-  /* QUIZ PAGE */
-  .answer-buttons:hover {
-    background: black;
-    color: white;
+  #question {
+    font-size: medium;
   }
 
-  /* Styles the next-btn, will style to look similar to the lotto submit button */
-  #next-btn:hover {
-    background: white;
-    color: rgba(88, 0, 153, 0.5);
+  .answer-buttons {
+    font-size: smaller;
   }
 }
