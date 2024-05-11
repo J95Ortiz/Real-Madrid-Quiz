@@ -64,6 +64,7 @@ main {
   background-size: 700px;
   margin-top: 4em;
   background-color: rgba(29, 51, 97, 1);
+  display: flex;
   /* Style below added to push footer to the bottom of the page */
   flex: 1 0 auto;
 
@@ -107,14 +108,17 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   border: solid gold;
   width: 85%;
-  max-height: 900px;
+  height: fit-content;
   max-width: 600px;
   margin: auto;
   margin-top: 30%;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-self: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-grow: 0.5;
 }
 
 /* INDEX PAGE */
@@ -177,7 +181,6 @@ footer {
 
 /* Styles for the quiz questions */
 #question {
-  font-size: large;
   padding: 1%;
 }
 
@@ -226,24 +229,21 @@ footer {
   background: rgba(218, 84, 84, 0.75);
 }
 
-/* Media Styles for Phones */
-@media screen and (max-width: 412px) {
+/* Media Styles for Phones (S, M & L) - Portrait Mode */
+@media screen and (max-width: 760px) {
   .instructions,
   .game-area {
-    margin-top: 70%;
-    height: fit-content;
-    padding-bottom: 7px;
+    min-height: fit-content;
+    margin-top: 20%;
+    max-height: 520px;
   }
 
-  .instructions h1 {
-    margin-bottom: 7px;
+  .instructions {
+    margin-top: 37%;
+    height: 343px;
   }
 
-  .instructions p {
-    margin-bottom: 2%;
-  }
-
-  #start {
+    #start {
     width: 40%;
   }
 }
