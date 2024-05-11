@@ -62,7 +62,7 @@ main {
   background: url("../images/cover2.png") fixed center/cover;
   /* Real Madrid Logo set as background */
   background-size: 700px;
-  margin-top: 4em;
+
   background-color: rgba(29, 51, 97, 1);
   display: flex;
   /* Style below added to push footer to the bottom of the page */
@@ -102,8 +102,12 @@ footer {
 }
 
 /* Combined Styles */
+/* Media Styles for Phones (S, M & L) - Portrait Mode */
 .instructions,
 .game-area {
+  min-height: fit-content;
+  margin-top: 20%;
+  max-height: 520px;
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   border: solid gold;
@@ -111,7 +115,6 @@ footer {
   height: fit-content;
   max-width: 600px;
   margin: auto;
-  margin-top: 30%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -122,11 +125,6 @@ footer {
 }
 
 /* INDEX PAGE */
-.instructions {
-  display: flex;
-  flex-direction: column;
-}
-
 .instructions p {
   padding: 1%;
   font-weight: bold;
@@ -137,14 +135,14 @@ footer {
   display: flex;
   align-self: center;
   justify-content: center;
-  margin: 1%;
+  margin: 3%;
   padding: 1%;
   color: white;
   background-color: rgba(88, 0, 153, 0.5);
   border: 1px solid gold;
   border-radius: 5px;
   font-weight: bolder;
-  width: 25%;
+  width: 40%;
 }
 
 #start a {
@@ -159,8 +157,7 @@ footer {
 /* Styles the Quiz Section so it appears central and applies a border */
 .game-area {
   padding: 1%;
-  margin: 100px auto 0;
-  margin-top: 260px;
+  margin: 25px auto 0;
 }
 
 /* Spaces out the header and gives it aq bottom border thinner than the quiz section border */
@@ -196,6 +193,7 @@ footer {
   transition: all 0.3s;
 }
 
+/* Styles the Answer options */
 .answer-buttons:hover {
   background: black;
   color: white;
@@ -222,28 +220,141 @@ footer {
 
 /* Styles below will apply to user's selection and go green if the answer is correct, and red if incorrect */
 .correct {
+  color: white;
   background: rgba(133, 214, 109, 0.75);
 }
 
 .incorrect {
+  color: white;
   background: rgba(218, 84, 84, 0.75);
 }
 
-/* Media Styles for Phones (S, M & L) - Portrait Mode */
-@media screen and (max-width: 760px) {
-  .instructions,
+/* Media Styles for Tablets 768px + */
+@media screen and (min-width: 768px) {
+  /* INDEX PAGE */
+  #start {
+    margin: 2%;
+    width: 30%;
+  }
+
+  /* QUIZ PAGE */
+  /* Styles the next-btn, will style to look similar to the lotto submit button */
+  #next-btn:hover {
+    background: white;
+    color: rgba(88, 0, 153, 0.5);
+  }
+}
+
+/* Media Styles for Laptops (992px +)  */
+@media screen and (min-width: 992px) {
+  /* INDEX PAGE */
+  #start {
+    margin: 1%;
+    margin-top: 0px;
+  }
+
+  #start a {
+    display: flex;
+    align-self: center;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+  }
+
+  /* QUIZ PAGE */
+  /* Styles the question and answer area */
   .game-area {
-    min-height: fit-content;
-    margin-top: 20%;
-    max-height: 520px;
+    margin: auto;
   }
 
-  .instructions {
-    margin-top: 37%;
-    height: 343px;
+  #next-btn:hover {
+    background: white;
+    color: rgba(88, 0, 153, 0.5);
+  }
+}
+
+/* Media Styles for Laptops (1024px +)  */
+@media screen and (min-width: 1024px) {
+  /* INDEX PAGE */
+  .instructions p {
+    padding: 1%;
+    font-weight: bold;
+    line-height: 18px;
   }
 
-    #start {
-    width: 40%;
+  #start {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+    background-color: rgba(88, 0, 153, 0.5);
+    border: 1px solid gold;
+    border-radius: 5px;
+    font-weight: bolder;
+    width: 25%;
+  }
+
+  #start a {
+    display: flex;
+    align-self: center;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+  }
+
+  /* QUIZ PAGE */
+  .answer-buttons:hover {
+    background: black;
+    color: white;
+  }
+
+  #next-btn:hover {
+    background: white;
+    color: rgba(88, 0, 153, 0.5);
+  }
+}
+
+/* Media Styles for Laptops (1440px +)  */
+@media screen and (min-width: 1440px) {
+  .instructions p {
+    padding: 1%;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  #start {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+    background-color: rgba(88, 0, 153, 0.5);
+    border: 1px solid gold;
+    border-radius: 5px;
+    font-weight: bolder;
+    width: 25%;
+  }
+
+  #start a {
+    display: flex;
+    align-self: center;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+  }
+
+  /* QUIZ PAGE */
+  .answer-buttons:hover {
+    background: black;
+    color: white;
+  }
+
+  /* Styles the next-btn, will style to look similar to the lotto submit button */
+  #next-btn:hover {
+    background: white;
+    color: rgba(88, 0, 153, 0.5);
   }
 }
