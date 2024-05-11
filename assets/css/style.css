@@ -111,7 +111,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   border: solid gold;
   width: 85%;
-
   max-width: 600px;
   margin: auto;
   border-radius: 10px;
@@ -270,14 +269,6 @@ footer {
   .game-area {
     width: 62%;
     margin: auto;
-    font-size: medium;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-self: center;
-    justify-content: space-evenly;
-    flex-grow: 0.5;
   }
 
   #start {
