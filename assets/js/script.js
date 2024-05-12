@@ -636,7 +636,7 @@ function resetState() {
 /**
  * This function will work out whether the User's choice is correct or incorrect
  * Does this by matching the answer to whether correct = True or False
- * Use e as the fn parameter here as "e" represents the event in nextQuestion, ln 611
+ * Use "e" as the fn parameter here as "e" represents the event in nextQuestion, ln 611
  */
 function userChoice(e) {
   let chosenAnswer = e.target;
