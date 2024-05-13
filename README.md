@@ -49,8 +49,8 @@ The site is split into 2 main pages:
 ### INDEX PAGE
 
 ![Index Page View](assets/readme_images/index.HTML_computer_view.png)
-![Index Page Phone Landscape View](assets/readme_images/index.HTML_phone_landscape_view.png)
 ![Index Page Phone View](assets/readme_images/index.HTML_phone_view.png)
+![Index Page Phone Landscape View](assets/readme_images/index.HTML_phone_landscape_view.png)
 
 ### QUIZ PAGE
 
@@ -67,6 +67,8 @@ Once a question has been answered, the selected answer will change colour depend
 ![Incorrect Answer Computer View](assets/readme_images/quiz.HTML_computer_view_incorrect.png)
 
 The "Next" and "Play Again" buttons are also responsive and the aim is that this will improve users' experience while completing the quiz.
+
+![Next Button Computer View Hover](assets/readme_images/quiz.HTML_computer_view_correct_nextBtn_hover.png)
 
 The Results message also changes depending on the score.
 
