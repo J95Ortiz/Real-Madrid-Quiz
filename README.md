@@ -48,23 +48,44 @@ The site is split into 2 main pages:
 
 ### INDEX PAGE
 
-![Index Page View](assets/readme_images/index.HTML_computer_view.png) 
-![Index Page Phone Landscape View](assets/readme_images/index.HTML_phone_landscape_view.png) 
+![Index Page View](assets/readme_images/index.HTML_computer_view.png)
+![Index Page Phone Landscape View](assets/readme_images/index.HTML_phone_landscape_view.png)
 ![Index Page Phone View](assets/readme_images/index.HTML_phone_view.png)
 
 ### QUIZ PAGE
 
-![Quiz Questions Page - Computer View](assets/readme_images/quiz.HTML_computer_view.png) 
+![Quiz Questions Page - Computer View](assets/readme_images/quiz.HTML_computer_view.png)
 ![Quiz Questions Page - Phone View](assets/readme_images/quiz.HTML_phone_view.png)
+
+The four answer options are responsive to the user hovering their mouse over them.
+
+![Computer View](assets/readme_images/quiz.HTML_computer_view_hover.png)
+
+Once a question has been answered, the selected answer will change colour depending on the user's choice.
+
+![Correct Answer Computer View](assets/readme_images/quiz.HTML_computer_view_correct.png)
+![Incorrect Answer Computer View](assets/readme_images/quiz.HTML_computer_view_incorrect.png)
+
+The "Next" and "Play Again" buttons are also responsive and the aim is that this will improve users' experience while completing the quiz.
+
+The Results message also changes depending on the score.
 
 ### RESULTS SCREEN
 
-## FUTURE FEATURES
+![Results Screen Computer View](assets/readme_images/quiz.HTML_result_computer_view.png)
+![Results Screen Hover Computer View](assets/readme_images/quiz.HTML_result_computer_view_hover.png)
+![Results Screen Phone View](assets/readme_images/quiz.HTML_result_phone_view.png)
+![Results Screen Hover Phone View](assets/readme_images/quiz.HTML_result_phone_view_hover.png)
+![Results Screen Landscape Phone View](assets/readme_images/quiz.HTML_result_phone_landscape_view.png)
 
+## FUTURE FEATURES
 
 # TESTING
 
 ## PERFORMANCE & ACCESSIBILITY
+
+![Index Page Lighthouse Results](assets/readme_images/index.HTML_lighthouse_results.png)
+![Quiz Page Lighthouse Results](assets/readme_images/quiz.HTML_lighthouse_results.png)
 
 The questions used in the quiz, and the file with the quiz setup and structure are stored in separate JS files:
 
@@ -76,11 +97,16 @@ This way in future whenever anyone wants to add a question, update the answers o
 
 ## VALIDATOR TESTING
 
+The W3C [Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to check the HTML code on both pages, and they passed.
+
 Index Page:
+![index.html Validator Result](assets/readme_images/index.HTML_validator_check.png)
 
 Quiz Page:
+![quiz.html Validator Result](assets/readme_images/quiz.HTML_validator_check.png)
 
 CSS:
+![style.css Validator Result](assets/readme_images/style.CSS_validator_check.png)
 
 Javascript:
 

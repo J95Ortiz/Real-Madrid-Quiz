@@ -213,7 +213,7 @@ footer {
 
 #next-btn:hover {
   background: white;
-  color: rgba(88, 0, 153, 0.5);
+  color: rgb(88, 0, 153);
 }
 
 /* Styles below will apply to user's selection and go green if the answer is correct, and red if incorrect */
