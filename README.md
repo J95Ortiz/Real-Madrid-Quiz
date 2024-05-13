@@ -109,6 +109,7 @@ CSS:
 ![style.css Validator Result](assets/readme_images/style.CSS_validator_check.png)
 
 Javascript:
+![script.js Validator Result](assets/readme_images/style.CSS_validator_check.png)
 
 # TROUBLESHOOTING
 
