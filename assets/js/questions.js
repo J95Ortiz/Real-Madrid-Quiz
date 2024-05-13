@@ -27,7 +27,7 @@ let questions = [
     rank: 3,
     question: "Which Manager made a surprise return to Madrid from Everton?",
     answers: [
-      { text: "zinedine Zidane", correct: false },
+      { text: "Zidane", correct: false },
       { text: "Julen Lopetegui", correct: false },
       { text: "Carlo Ancelotti", correct: true },
       { text: "Frank Lampard", correct: false },
