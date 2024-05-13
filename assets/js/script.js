@@ -1,5 +1,3 @@
-console.log("Hello from the console");
-
 //Creates an array with all the questions and answers
 //50 questions stored, but only 10 displayed per game
 //The answers array in each question will hold the options and whether they're right or wrong

@@ -17,8 +17,15 @@
 
 ## Site Structure
 
+The site is split into 2 main pages:
+
+1. [The Main Instructions Page](index.html)
+
+2. [The Quiz Page](quiz.html)
+
 ## Design Choices
 
+![Colour Scheme used on the site](assets/readme_images/real_madrid_quiz_page_colour_scheme.png)
 
 # FEATURES
 
@@ -57,7 +64,7 @@ Javascript:
 # TROUBLESHOOTING
 
 
-# DEPLOYMEN
+# DEPLOYMENT
 
 
 # CREDIT
