@@ -79,6 +79,7 @@ The Results message also changes depending on the score.
 ![Results Screen Phone View](assets/readme_images/quiz.HTML_result_phone_view.png)
 ![Results Screen Hover Phone View](assets/readme_images/quiz.HTML_result_phone_view_hover.png)
 ![Results Screen Landscape Phone View](assets/readme_images/quiz.HTML_result_phone_landscape_view.png)
+![Results Screen Landscape Phone View Hover](assets/readme_images/quiz.HTML_result_phone_landscape_view_hover.png)
 
 ## FUTURE FEATURES
 
@@ -111,7 +112,7 @@ CSS:
 ![style.css Validator Result](assets/readme_images/style.CSS_validator_check.png)
 
 Javascript:
-![script.js Validator Result](assets/readme_images/style.CSS_validator_check.png)
+![script.js Validator Result](assets/readme_images/script.JS_validator_check.png)
 
 # TROUBLESHOOTING
 
