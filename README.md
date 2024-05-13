@@ -1,8 +1,6 @@
 # **REAL MADRID QUIZ**
 
-![AmIResponsive Screenshot](assets/readme_images/full_site_amiresponsive.png)
 ![AmIResponsive Screenshot](assets/readme_images/full_site_amiresponsive_2.png)
-![AmIResponsive Screenshot](assets/readme_images/full_site_amiresponsive_3.png)
 
 # INTRODUCTION
 
