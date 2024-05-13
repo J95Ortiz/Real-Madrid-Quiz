@@ -4,18 +4,17 @@
 
 # INTRODUCTION
 
-
 # USER EXPERIENCE
 
-## Overview
+## OVERVIEW
 
-## Wireframes
+## WIREFRAMES
 
 ![Balsamiq Computer Wireframe](assets/readme_images/computer_view.png)
 ![Balsamiq Phone Wireframe](assets/readme_images/phone_view.png)
 ![Balsamiq Tablet Wireframe](assets/readme_images/tablet_view.png)
 
-## Site Structure
+## SITE STRUCTURE
 
 The site is split into 2 main pages:
 
@@ -23,34 +22,35 @@ The site is split into 2 main pages:
 
 2. [The Quiz Page](quiz.html)
 
-## Design Choices
+## DESIGN CHOICES
 
 ![Colour Scheme used on the site](assets/readme_images/real_madrid_quiz_page_colour_scheme.png)
 
 # FEATURES
 
-## Outline
+## OUTLINE
 
-## Main Features
+## MAIN FEATURES
 
-### Navigation Bar
+### NAVIGATION BAR
 
-### Footer
+![Navigation Bar Screenshot](assets/readme_images/header.png)
 
-### Index Page
+### FOOTER
 
-### Quiz Page
+### INDEX PAGE
 
-### Results Screen
+### QUIZ PAGE
 
-## Future Features
+### RESULTS SCREEN
 
+## FUTURE FEATURES
 
 # TESTING
 
-## Performance & Accessibility
+## PERFORMANCE & ACCESSIBILITY
 
-## Validator Testing
+## VALIDATOR TESTING
 
 Index Page:
 
@@ -60,17 +60,14 @@ CSS:
 
 Javascript:
 
-
 # TROUBLESHOOTING
-
 
 # DEPLOYMENT
 
-
 # CREDIT
 
-## Media Credits
+## MEDIA CREDITS
 
-## Content Credit
+## CONTENT CREDIT
 
-## Acknowledgements
+## ACKNOWLEDGEMENTS

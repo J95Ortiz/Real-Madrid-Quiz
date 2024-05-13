@@ -264,15 +264,61 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) {
-  .instructions,
+/* Media Styles for Big Tablets (1300px +)  */
+@media screen and (min-height: 1300px) {
+  /* INDEX PAGE */
+  .instructions p {
+    font-size: x-large;
+    line-height: 30px;
+  }
+
+  .instructions {
+    height: 380px;
+    margin-top: 470px;
+  }
+
+  #start a,
+  #next-btn {
+    margin: 3%;
+    padding: 2%;
+    font-size: 20px;
+  }
+
+  /* QUIZ PAGE */
   .game-area {
-    width: 62%;
+    height: fit-content;
+    min-height: 430px;
+    padding: 1%;
     margin: auto;
   }
 
+  .central-area {
+  }
+
+  #question {
+    line-height: 40px;
+  }
+
+  .answer-buttons {
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  /* INDEX PAGE */
+  .instructions {
+    width: 25%;
+  }
+
+  /* QUIZ PAGE */
   #start {
     margin-top: 1%;
+  }
+
+  .game-area {
+    margin: 0.5% auto 0.5%;
+    width: 30%;
+    flex-grow: 0.35;
   }
 
   .game-area h1 {
