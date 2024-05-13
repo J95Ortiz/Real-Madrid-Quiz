@@ -4,11 +4,25 @@
 
 # INTRODUCTION
 
-[Real Madrid Quiz](https://j95ortiz.github.io/Real-Madrid-Quiz/)
+This site was created with the idea of being an extension to my first portfolio website which you can find linked below:
+
+[Real Madrid Page](https://j95ortiz.github.io/Real-Madrid-Portfolio-project-1/index.html)
+
+[Real Madrid Repository](https://github.com/J95Ortiz/Real-Madrid-Portfolio-project-1)
+
+Feel free to have a go and test your Real Madrid Trivia knowledge by following the link to the webpage - [Real Madrid Quiz](https://j95ortiz.github.io/Real-Madrid-Quiz/)
 
 # USER EXPERIENCE
 
 ## OVERVIEW
+
+The user's experience was put at the forefront of the design of this page, however there are a couple of features which I want to add in future
+
+#################################
+
+**in order to increase it further / so as to make it better.**
+
+##################################
 
 ## WIREFRAMES
 
