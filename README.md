@@ -86,7 +86,7 @@ If the user answers correctly then their selection will be highlighted green, an
 
 ![Incorrect Answer Computer View](assets/readme_images/quiz.HTML_computer_view_incorrect.png)
 
-The "Next" button is also responsive and its colours are inverted when th user hovers their mouse or taps it. However, it is only displayed once the question on the screen has been answered, with the aim being to improve the users' experience while playing. I created it this way following a comment from one of my friends who I showed the initial design to.
+The "Next" button is also responsive and its colours are inverted when the user hovers their mouse or taps it. However, it is only displayed once the question on the screen has been answered, with the aim being to improve the users' experience while playing. I created it this way following a comment from one of my friends who I showed the initial design to.
 
 They suggested that if the button was visible to the user, they might try and skip a question if they didn't know the answer which would probably affect their experience.
 
@@ -96,7 +96,7 @@ To prevent a user skipping the question altogether and prompt them to at least h
 
 ### RESULTS SCREEN
 
-The Results screen design is meant to be consistent with the rest of the site, maintaining the same colour combinations as the instructions page and the question screens. 
+The Results screen design is meant to be consistent with the rest of the site, maintaining the same colour combinations as the instructions page and the question screens.
 
 The play again button is styled the same way as the "Next" button, and is responsive in the same way.
 
@@ -106,7 +106,7 @@ The play again button is styled the same way as the "Next" button, and is respon
 ![Results Screen Landscape Phone View](assets/readme_images/quiz.HTML_result_phone_landscape_view.png)
 ![Results Screen Landscape Phone View Hover](assets/readme_images/quiz.HTML_result_phone_landscape_view_hover.png)
 
-![Results Screen Phone View](assets/readme_images/quiz.HTML_result_phone_view.png) 
+![Results Screen Phone View](assets/readme_images/quiz.HTML_result_phone_view.png)
 ![Results Screen Hover Phone View](assets/readme_images/quiz.HTML_result_phone_view_hover.png)
 
 I thought that a good way of improving the user's experience would be to add a message which changes depending on their score. I therefore created 3 different messages, and the user should see the apropriate one depending on what their score is.
@@ -117,22 +117,17 @@ If they score higher than 7 the message will look like this:
 
 If they score between 5 and 7, the message displayed will look like this:
 
-![Final Result Message 2](assets/readme_images/quiz.HTML_result_not_bad_message.png) 
+![Final Result Message 2](assets/readme_images/quiz.HTML_result_not_bad_message.png)
 
 And if they score less than 5, the message displayed will look something like this:
 
-![Final Result Message 3](assets/readme_images/quiz.HTML_result_Hazard_message.png) 
+![Final Result Message 3](assets/readme_images/quiz.HTML_result_Hazard_message.png)
 
 The line indicating to the user how to get back to the instructions page was added after another comment from a user I asked to try out the site and said they believed it would improve the experience and provide further clarity.
 
+As I plan to integrate this site with my original Portfolio
+
 ## FUTURE FEATURES
-
-# TESTING
-
-## PERFORMANCE & ACCESSIBILITY
-
-![Index Page Lighthouse Results](assets/readme_images/index.HTML_lighthouse_results.png)
-![Quiz Page Lighthouse Results](assets/readme_images/quiz.HTML_lighthouse_results.png)
 
 The questions used in the quiz, and the file with the quiz setup and structure are stored in separate JS files:
 
@@ -142,30 +137,88 @@ The questions used in the quiz, and the file with the quiz setup and structure a
 
 This way in future whenever anyone wants to add a question, update the answers or remove a question this is now easier to do.
 
+# TESTING
+
+## PERFORMANCE & ACCESSIBILITY
+
+Performance testing was carried out on both pages using the [Lighthouse feature on Google Chrome's Dev Tools](https://googlechrome.github.io/lighthouse/viewer/).
+
+<u>Instructions Page Results:</u>
+
+![Index Page Lighthouse Results](assets/readme_images/index.HTML_lighthouse_results.png)
+
+<u>Quiz Page Results:</u>
+
+![Quiz Page Lighthouse Results](assets/readme_images/quiz.HTML_lighthouse_results.png)
+
 ## VALIDATOR TESTING
 
 The W3C [Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to check the HTML code on both pages, and they passed.
 
-Index Page:
+<u>Index.html:</u>
 ![index.html Validator Result](assets/readme_images/index.HTML_validator_check.png)
 
-Quiz Page:
+<u>Quiz.html:</u>
 ![quiz.html Validator Result](assets/readme_images/quiz.HTML_validator_check.png)
 
-CSS:
+The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the CSS code and it also passed.
+
+<u>Style.css:</u>
 ![style.css Validator Result](assets/readme_images/style.CSS_validator_check.png)
 
-Javascript:
+The [JSHint Javascript Validation Service](https://jshint.com/) was used to check the Javascript files and they passed.
+
+<u>script.js:</u>
 ![script.js Validator Result](assets/readme_images/script.JS_validator_check.png)
 
 # TROUBLESHOOTING
+
+My first issue came about when trying to create a formula which would pick 10 random numbers between 1 & 50, and using them to create an array to be used in the quiz.
+
+I struggled getting the page to reload the 
 
 # DEPLOYMENT
 
 # CREDIT
 
-## MEDIA CREDITS
-
 ## CONTENT CREDIT
+
+Quiz Logic and Inspiration Credit:
+
+[Javascript Youtube Tutorial](https://simplestepscode.com/javascript-quiz-tutorial/)
+
+[How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+
+Quiz Question Content Credit Links:
+
+- http://www.freepubquiz.co.uk/real-madrid.html 
+
+- [Real Madrid Trivia Template | LivePolls | QuestionPro](https://www.questionpro.com/livepolls/templates/real-madrid-trivia-questions/)
+
+- https://en.wikipedia.org/wiki/Sergio_Ramos
+
+- https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro
+
+- https://bleacherreport.com/articles/10061039-gareth-bale-retires-at-33-won-champions-league-5-times-with-real-madrid#:~:text=The%2033%2Dyear%2Dold%20is,in%20a%20nine%2Dyear%20stretch.&text=He%20also%20played%20for%20Tottenham,FC%20at%20the%20club%20level
+
+- https://www.realmadrid.com/en-US/the-club/history/football-legends/sergio-ramos-garcia
+
+- https://www.transfermarkt.co.uk/zinedine-zidane/alletore/spieler/3111/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=
+
+- https://www.transfermarkt.co.uk/sergio-ramos/alletore/spieler/25557/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=
+
+- https://www.marca.com/en/football/real-madrid/2021/06/17/60ca692722601d4f438b4696.html
+
+- https://www.planetsport.com/soccer/iker-casillas
+
+- https://www.transfermarkt.co.uk/iker-casillas/leistungsdatenverein/spieler/3979
+
+- https://www.transfermarkt.co.uk/eden-hazard/leistungsdatenverein/spieler/50202
+
+- https://www.transfermarkt.co.uk/raul/erfolge/spieler/7349
+
+- https://www.transfermarkt.co.uk/gareth-bale/leistungsdatenverein/spieler/39381
+
+## MEDIA CREDITS
 
 ## ACKNOWLEDGEMENTS
