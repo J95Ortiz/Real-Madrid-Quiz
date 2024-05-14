@@ -197,7 +197,7 @@ To prevent a user skipping the question altogether and prompt them to at least h
 
 ### RESULTS SCREEN
 
-The Results screen design is meant to be consistent with the rest of the site, maintaining the same colour combinations as the instructions page and the question screens.
+The Results Screen design is meant to be consistent with the rest of the site by maintaining the same colour scheme as the instructions page and the question screens.
 
 The play again button is styled the same way as the "Next" button, and is responsive in the same way.
 
@@ -210,7 +210,7 @@ The play again button is styled the same way as the "Next" button, and is respon
 ![Results Screen Phone View](assets/readme_images/quiz.HTML_result_phone_view.png)
 ![Results Screen Hover Phone View](assets/readme_images/quiz.HTML_result_phone_view_hover.png)
 
-I thought that a good way of improving the user's experience would be to add a message which changes depending on their score. I therefore created 3 different messages, and the user should see the apropriate one depending on what their score is.
+I thought that a good way of improving the user's experience would be to add a message which changes depending on their score. I therefore created three different messages, and the user should see the apropriate one depending on what their score is.
 
 If they score higher than 7 the message will look like this:
 ![Final Result Message 1](assets/readme_images/quiz.HTML_result_galactico_message.png)
@@ -221,25 +221,31 @@ If they score between 5 and 7, the message displayed will look like this:
 And if they score less than 5, the message displayed will look something like this:
 ![Final Result Message 3](assets/readme_images/quiz.HTML_result_Hazard_message.png)
 
-The line indicating to the user how to get back to the instructions page was added after a comment from my Mentor Precious Ijege, who said they believed it would improve the experience and provide further clarity.
+The line indicating to the user how to get back to the instructions page was added after some feedback from my Mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), who said they believed it would improve the experience and provide further clarity.
 
-This was supported by other users who I'd got to try out the site before the instructions page had been added, and they agreed that it made the whole site feel clearer, more professional and streamlined.
+My plan is to add another button in future that sits alongside the "Play Again" one and says "Back to Instructions". I believe that adding this would make the Results message stand out more to the user and probably make the site feel more streamlined and responsive.
 
 ## FUTURE FEATURES
 
-The main Feature I'd like to add to the Quiz site is add links to the header
+My plan ultimately is to link the Quiz Site to the Real Madrid Site I created for my first project. Once this is done the User should feel that the quiz is an extension of the Madrid site, rather than its own standalone project. 
 
-Make the Play Game button responsive also
+As a result, there are quite a few features I want to implement in future as I've been unable to so far. I'll continue working on this project once I've received my grades and by then I should be capable and have the time to carry out all these changes. 
 
-Create function so that the questions aren't repeated although can't find a way of doing this if I'm creating Random numbers
+- Once I've linked both projects, in order to make the whole site consistent I'll have to change the Navigation Bar's layout and add links to the other pages of the site. It would still behave in a similar way to now, but the new layout and links would be consistent across the whole site, meaning the User could then access different pages directly from the Navigation Bar.
 
-Add a correct counter on the side
+- As mentioned in the previous section once both projects have been linked, I'd like to add another button with a link to the Madrid Project Home Page next to the "Play Again" button on the results screen.
 
-Add an option where the user can tell the computer how many questions they want in the quiz
+- A further addition I'd like to implement is to make the "Play Game" button in the instructions page responsive, just like the "Next" and "Play Again" buttons are.
 
-make the buttons as responsive on mobile and tablets as they are on computer screens.
+- I'd also like to add a counter on the side so that the user sees how many questions they've got right.
 
-Add a link to Madrid Project Home Page next to Play again
+- I'd like to include an input field in the instructions page where the user can tell the computer how many questions they want in the quiz, and then the formula in [script.js](script.js) then takes this input and displays however many questions the user chooses rather than always being a set of 10. This idea came about as a result of feedback received from one of my friends who tried out the site. As they're not into football they said that a User withy a similar mindset might feel like 10 questions are too many and would get bored or quit halfway through. 
+
+- Once I'm more capable I'd like to tweak the CSS and Javascript code slightly in order to make the buttons as responsive on mobile and tablets as they are on computer screens currently. When carrying out testing I noticed that the hover effect didn't work as well or look as good on devices without a mouse as they did on a computer screen.
+
+- I'd also like to amend the _setupQuiz()_ function in [script.js](script.js) so that the questions aren't repeated, although I looked into it and couldn't find a way of doing this if I'm creating an array with random numbers using _Math.random()_. 
+
+Further details on some of these features can be found in the [Troubleshooting Section](#troubleshooting).
 
 # TESTING
 
@@ -268,18 +274,20 @@ The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used 
 _Style.css:_
 ![style.css Validator Result](assets/readme_images/style.CSS_validator_check.png)
 
-The [JSHint Javascript Validation Service](https://jshint.com/) was used to check the Javascript files and they passed.
+The [JSHint Javascript Code Quality Tool](https://jshint.com/) was used to check the Javascript files and they passed.
 
 _Script.js:_
 ![script.js Validator Result](assets/readme_images/script.JS_validator_check.png)
 
 # TROUBLESHOOTING
 
-My first issue came about when trying to create a formula which would pick 10 random numbers between 1 & 50, and using them to create an array to be used in the quiz.
+My first issue came about when trying to create a formula which would pick 10 random numbers between 1 & 50, and using them to create an array to be used in the quiz. My main problem here was that I was unable to stop the computer from picking the same value more than once on some occasions. 
 
-questions not getting repeated
+I looked into this and changed the formula a few times but still have been unable to make it work. The closest I managed to get to was using _indexOf()_, however if I used this method, the number of questions displayed went down by one each time the page was reloaded.
 
-I struggled getting the page to reload the quiz with different questions
+It's something that's really bugged me and I'll keep looking into it as I'm sure there shoud be a way of iterating through the array created in _setupQuiz()_, replace any duplicate values with another and then repeat the process until all the values are still random but different each time.
+
+Another bug I encountered but was able to resolve on this occasion was getting the page to reload the quiz with different questions to the ones a User has just answered when they pressed "Play Again". I was able to resolve this by amending the _gameScore()_ function and rather than calling the _setupQuiz()_ function, I asked the computer to reload the page.
 
 # DEPLOYMENT
 
@@ -299,11 +307,11 @@ The live link can be found here - https://j95ortiz.github.io/Real-Madrid-Quiz/
 
 Quiz Logic and Inspiration Credit:
 
-[Javascript Youtube Tutorial](https://simplestepscode.com/javascript-quiz-tutorial/)
+- [Javascript Youtube Tutorial](https://simplestepscode.com/javascript-quiz-tutorial/)
 
-[How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+- [How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 
-[Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k)
+- [Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
 Quiz Question Content Credit Links:
 
@@ -311,29 +319,29 @@ Quiz Question Content Credit Links:
 
 - [Real Madrid Trivia Template | LivePolls | QuestionPro](https://www.questionpro.com/livepolls/templates/real-madrid-trivia-questions/)
 
-- https://en.wikipedia.org/wiki/Sergio_Ramos
+- [Sergio Ramos Wikipedia Page](https://en.wikipedia.org/wiki/Sergio_Ramos)
 
-- https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro
+- [Real Madrid Official Site Cristiano Ronaldo Page](https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro)
 
-- https://bleacherreport.com/articles/10061039-gareth-bale-retires-at-33-won-champions-league-5-times-with-real-madrid#:~:text=The%2033%2Dyear%2Dold%20is,in%20a%20nine%2Dyear%20stretch.&text=He%20also%20played%20for%20Tottenham,FC%20at%20the%20club%20level
+- [Bleacher Report Article on Gareth Bale](https://bleacherreport.com/articles/10061039-gareth-bale-retires-at-33-won-champions-league-5-times-with-real-madrid#:~:text=The%2033%2Dyear%2Dold%20is,in%20a%20nine%2Dyear%20stretch.&text=He%20also%20played%20for%20Tottenham,FC%20at%20the%20club%20level)
 
-- https://www.realmadrid.com/en-US/the-club/history/football-legends/sergio-ramos-garcia
+- [Real Madrid Official Site Sergio Ramos Page](https://www.realmadrid.com/en-US/the-club/history/football-legends/sergio-ramos-garcia)
 
-- https://www.transfermarkt.co.uk/zinedine-zidane/alletore/spieler/3111/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=
+- [Transfermarkt Zidane Page](https://www.transfermarkt.co.uk/zinedine-zidane/alletore/spieler/3111/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=)
 
-- https://www.transfermarkt.co.uk/sergio-ramos/alletore/spieler/25557/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=
+- [Transfermarkt Sergio Ramos Page](https://www.transfermarkt.co.uk/sergio-ramos/alletore/spieler/25557/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=)
 
-- https://www.marca.com/en/football/real-madrid/2021/06/17/60ca692722601d4f438b4696.html
+- [Marca Article](https://www.marca.com/en/football/real-madrid/2021/06/17/60ca692722601d4f438b4696.html)
 
-- https://www.planetsport.com/soccer/iker-casillas
+- [Planet Sport Casillas Page](https://www.planetsport.com/soccer/iker-casillas)
 
-- https://www.transfermarkt.co.uk/iker-casillas/leistungsdatenverein/spieler/3979
+- [Transfermarkt Casillas Page](https://www.transfermarkt.co.uk/iker-casillas/leistungsdatenverein/spieler/3979)
 
-- https://www.transfermarkt.co.uk/eden-hazard/leistungsdatenverein/spieler/50202
+- [Transfermarkt Eden Hazard Page](https://www.transfermarkt.co.uk/eden-hazard/leistungsdatenverein/spieler/50202)
 
-- https://www.transfermarkt.co.uk/raul/erfolge/spieler/7349
+- [Transfermarkt Raul Gonzalez Page](https://www.transfermarkt.co.uk/raul/erfolge/spieler/7349)
 
-- https://www.transfermarkt.co.uk/gareth-bale/leistungsdatenverein/spieler/39381
+- [Transfermarkt Gareth Bale Page](https://www.transfermarkt.co.uk/gareth-bale/leistungsdatenverein/spieler/39381)
 
 ## MEDIA CREDITS
 
