@@ -69,24 +69,24 @@ The wireframes were created on [Balsmiq](https://balsamiq.com/wireframes/) and w
 Although the final design varies slightly from the initial wireframes, these can be seen below:
 
 ![Balsamiq Computer Wireframe](assets/readme_images/computer_view.png)
-![Balsamiq Phone Wireframe](assets/readme_images/phone_view.png)
 ![Balsamiq Tablet Wireframe](assets/readme_images/tablet_view.png)
+![Balsamiq Phone Wireframe](assets/readme_images/phone_view.png)
 
 ## SITE STRUCTURE
 
 The site is split into 2 main pages:
 
-1. [The Main Instructions Page](index.html)
+1. [__The Main Instructions Page__](index.html)
 
-2. [The Quiz Page](quiz.html)
+2. [__The Quiz Page__](quiz.html)
 
-The Results Screen the User sees when they've completed the quiz is part of the [quiz.html](quiz.html) file, and the code in [script.js](script.js) checks whether all the questions have been answered using the displayNext() & resetState() functions. Once this is done, by combining these functions with the gameScore() function the question is replaced with the User's score and a message is displayed alongside it which changes depending on how many questions they got right.
+The Results Screen will be displayed to the User once they've completed the quiz, and is part of the [quiz.html](quiz.html) file. The code in [script.js](script.js) checks whether all the questions have been answered using the *displayNext()* & *resetState()* functions. Once this is done, by combining these functions with the *gameScore()* function the question is replaced with the User's score and a message is displayed alongside it which changes depending on how many questions they got right.
 
 The questions used in the quiz, and the file containing the quiz structure and logic are stored in separate JS files:
 
-1. [Quiz Questions and Answers File](assets/js/questions.js)
+1. [__Quiz Questions and Answers File__](assets/js/questions.js)
 
-2. [Quiz Creator and Logic File](assets/js/script.js)
+2. [__Quiz Creator and Logic File__](assets/js/script.js)
 
 This way in future whenever anyone wants to add a question, update the answers or remove a question this is easier to do.
 
@@ -106,13 +106,11 @@ Some of the Feedback following the submission of the first project was that the 
 
 Even though the site has only two main pages, the main intention is that from a User's perspective it wil feel like it's split into three parts:
 
-1. Instructions
+1. [*Instructions*](#index-page)
 
-2. Quiz Questions
+2. [*Quiz Questions*](#quiz-page)
 
-3. Result Screen with score and message
-
-Social media links are displayed on the footer with icons so the user knows which site they're accessing.
+3. [*Result Screen with score, message and "Play Again" button*](#results-screen)
 
 ## MAIN FEATURES
 
@@ -120,15 +118,25 @@ Social media links are displayed on the footer with icons so the user knows whic
 
 ![Navigation Bar Screenshot](assets/readme_images/header.png)
 
+When this site is linked to the Real Madrid Project, the aim is that the User will also see links in the Navigation Bar which they can then use to navigate the full site.
+
 ### FOOTER
 
 ![Footer Screenshot](assets/readme_images/footer.jpg)
+
+The User will find links to Real Madrid's Official Social Media Channels on the footer, and these are displayed with icons so the user knows which Social Media site they're accessing. 
+
+These open in a new tab when actioned, so as to give the User more autonomy and control over how they choose to navigate the site.
 
 ### INDEX PAGE
 
 ![Index Page View](assets/readme_images/index.HTML_computer_view.png)
 ![Index Page Phone Landscape View](assets/readme_images/index.HTML_phone_landscape_view.png)
 ![Index Page Phone View](assets/readme_images/index.HTML_phone_view.png)
+
+This is the first screen the User will see when they access the quiz link. It's simply laid out and has been styled so that it looks good across all screen sizes, and also changes depending whether the device the User is using is in landscape or portrait mode.
+
+
 
 ### QUIZ PAGE
 
@@ -176,15 +184,12 @@ The play again button is styled the same way as the "Next" button, and is respon
 I thought that a good way of improving the user's experience would be to add a message which changes depending on their score. I therefore created 3 different messages, and the user should see the apropriate one depending on what their score is.
 
 If they score higher than 7 the message will look like this:
-
 ![Final Result Message 1](assets/readme_images/quiz.HTML_result_galactico_message.png)
 
 If they score between 5 and 7, the message displayed will look like this:
-
 ![Final Result Message 2](assets/readme_images/quiz.HTML_result_not_bad_message.png)
 
 And if they score less than 5, the message displayed will look something like this:
-
 ![Final Result Message 3](assets/readme_images/quiz.HTML_result_Hazard_message.png)
 
 The line indicating to the user how to get back to the instructions page was added after a comment from my Mentor Precious Ijege, who said they believed it would improve the experience and provide further clarity.
@@ -195,38 +200,40 @@ This was supported by other users who I'd got to try out the site before the ins
 
 The main Feature I'd like to add to the Quiz site is add links to the header
 
+Make the Play Game button responsive also
+
+Add a link to Madrid Project Home Page next to Play again
+
 # TESTING
 
 ## PERFORMANCE & ACCESSIBILITY
 
 Performance testing was carried out on both pages using the [Lighthouse feature on Google Chrome's Dev Tools](https://googlechrome.github.io/lighthouse/viewer/).
 
-<u>Instructions Page Results:</u>
-
+_Instructions Page Results:_
 ![Index Page Lighthouse Results](assets/readme_images/index.HTML_lighthouse_results.png)
 
-<u>Quiz Page Results:</u>
-
+_Quiz Page Results:_
 ![Quiz Page Lighthouse Results](assets/readme_images/quiz.HTML_lighthouse_results.png)
 
 ## VALIDATOR TESTING
 
 The W3C [Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to check the HTML code on both pages, and they passed.
 
-Index.html:
+_Index.html:_
 ![index.html Validator Result](assets/readme_images/index.HTML_validator_check.png)
 
-Quiz.html:
+_Quiz.html:_
 ![quiz.html Validator Result](assets/readme_images/quiz.HTML_validator_check.png)
 
 The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the CSS code and it also passed.
 
-Style.css:
+_Style.css:_
 ![style.css Validator Result](assets/readme_images/style.CSS_validator_check.png)
 
 The [JSHint Javascript Validation Service](https://jshint.com/) was used to check the Javascript files and they passed.
 
-Script.js:
+_Script.js:_
 ![script.js Validator Result](assets/readme_images/script.JS_validator_check.png)
 
 # TROUBLESHOOTING
