@@ -4,25 +4,21 @@
 
 # INTRODUCTION
 
-This site was created with the idea of being an extension to my first portfolio website which you can find linked below:
+This project was designed to be used as a quiz which a user can take and test their knowledge about Real Madrid. I created the quiz around the Real Madrid Senior Team because my intention is for it to be an extension to my first portfolio website which you can find linked below:
 
 [Real Madrid Page](https://j95ortiz.github.io/Real-Madrid-Portfolio-project-1/index.html)
 
 [Real Madrid Github Repository](https://github.com/J95Ortiz/Real-Madrid-Portfolio-project-1)
 
-Feel free to have a go and test your Real Madrid Trivia knowledge by following the link to the webpage - [Real Madrid Quiz](https://j95ortiz.github.io/Real-Madrid-Quiz/)
+Originally I'd wanted the Real Madrid Site to have a game side as well, so the user felt there was a fun side to the Site, rather than it just being informative. However at the time I wasn't able to create it as my knowledge of Javascript was incredibly limited.
+
+The Quiz Site is now fully operational so feel free to have a go and test your Real Madrid Trivia knowledge by following the link to the webpage - [Real Madrid Quiz](https://j95ortiz.github.io/Real-Madrid-Quiz/)
 
 # USER EXPERIENCE
 
 ## OVERVIEW
 
-The user's experience was put at the forefront of the design of this page, however there are a couple of features which I want to add in future
-
-#################################
-
-**in order to improve it / so as to make it better.**
-
-##################################
+The user's experience was put at the forefront of the design of this page, however there are a couple of features which I want to add in future and I've referred to these in the [Future Features Section](##future-features). Once the Quiz Site is linked to the main Real Madrid Site and these future features implemented, I believe the User's Experience will be even better.
 
 ## WIREFRAMES
 
@@ -41,6 +37,14 @@ The site is split into 2 main pages:
 1. [The Main Instructions Page](index.html)
 
 2. [The Quiz Page](quiz.html)
+
+The questions used in the quiz, and the file with the quiz setup and structure are stored in separate JS files:
+
+1. [Quiz Questions and Answers File](assets/js/questions.js)
+
+2. [Quiz Creator and Logic File](assets/js/script.js)
+
+This way in future whenever anyone wants to add a question, update the answers or remove a question this is now easier to do.
 
 ## DESIGN CHOICES
 
@@ -123,19 +127,11 @@ And if they score less than 5, the message displayed will look something like th
 
 ![Final Result Message 3](assets/readme_images/quiz.HTML_result_Hazard_message.png)
 
-The line indicating to the user how to get back to the instructions page was added after another comment from a user I asked to try out the site and said they believed it would improve the experience and provide further clarity.
+The line indicating to the user how to get back to the instructions page was added after a comment from my Mentor Precious Ijege, who said they believed it would improve the experience and provide further clarity.
 
-As I plan to integrate this site with my original Portfolio
+This was supported by other users who I'd got to try out the site before the instructions page had been added, and they agreed that it made the whole site feel clearer, more professional and streamlined.
 
 ## FUTURE FEATURES
-
-The questions used in the quiz, and the file with the quiz setup and structure are stored in separate JS files:
-
-1. [Quiz Questions and Answers File](assets/js/questions.js)
-
-2. [Quiz Creator and Logic File](assets/js/script.js)
-
-This way in future whenever anyone wants to add a question, update the answers or remove a question this is now easier to do.
 
 # TESTING
 
@@ -155,27 +151,27 @@ Performance testing was carried out on both pages using the [Lighthouse feature 
 
 The W3C [Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to check the HTML code on both pages, and they passed.
 
-<u>Index.html:</u>
+Index.html:
 ![index.html Validator Result](assets/readme_images/index.HTML_validator_check.png)
 
-<u>Quiz.html:</u>
+Quiz.html:
 ![quiz.html Validator Result](assets/readme_images/quiz.HTML_validator_check.png)
 
 The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the CSS code and it also passed.
 
-<u>Style.css:</u>
+Style.css:
 ![style.css Validator Result](assets/readme_images/style.CSS_validator_check.png)
 
 The [JSHint Javascript Validation Service](https://jshint.com/) was used to check the Javascript files and they passed.
 
-<u>script.js:</u>
+Script.js:
 ![script.js Validator Result](assets/readme_images/script.JS_validator_check.png)
 
 # TROUBLESHOOTING
 
 My first issue came about when trying to create a formula which would pick 10 random numbers between 1 & 50, and using them to create an array to be used in the quiz.
 
-I struggled getting the page to reload the 
+I struggled getting the page to reload the quiz with different questions
 
 # DEPLOYMENT
 
@@ -187,11 +183,13 @@ Quiz Logic and Inspiration Credit:
 
 [Javascript Youtube Tutorial](https://simplestepscode.com/javascript-quiz-tutorial/)
 
-[How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+[How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+
+[Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
 Quiz Question Content Credit Links:
 
-- http://www.freepubquiz.co.uk/real-madrid.html 
+- http://www.freepubquiz.co.uk/real-madrid.html
 
 - [Real Madrid Trivia Template | LivePolls | QuestionPro](https://www.questionpro.com/livepolls/templates/real-madrid-trivia-questions/)
 
@@ -221,4 +219,14 @@ Quiz Question Content Credit Links:
 
 ## MEDIA CREDITS
 
+- The favicon images were created using the [Favicon Generator](https://realfavicongenerator.net/).
+
+- The imagesz for the links in the footer were obtained from the [Font Awesome Website](https://fontawesome.com/search?o=r&m=free).
+
+- The colour Palette image was created using [Colors.co](https://coolors.co/).
+
 ## ACKNOWLEDGEMENTS
+
+I would like to mention my mentor Precious Ijege for his support and input during the building process. His input and comments on how to improve the site helped me streamline the process, and his suggestion to add an instructions page was a great idea which I'm now glad I've implemented as it gives the site a better feel from a User's persopective.
+
+A further thank you to the Student Support Team at Code Institute for their assistance so far on the course.
