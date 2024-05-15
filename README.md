@@ -42,15 +42,15 @@
 
 # INTRODUCTION
 
-This project was designed to be used as a quiz game which a User can play. It was built and set up so the User feels they can test their Real Madrid knowledge.
+This project was designed to be used as a quiz game which a User can play.
 
-I created the quiz around the current Real Madrid Team and the Club's history because my intention is for it to be an extension to my first portfolio website which you can find linked below:
+I created the quiz around the current Real Madrid Team and the Club's history because my intention is for it to be an extension to my first portfolio website which is linked below:
 
 - [**_Real Madrid Page_**](https://j95ortiz.github.io/Real-Madrid-Portfolio-project-1/index.html)
 
 - [**_Real Madrid Github Repository_**](https://github.com/J95Ortiz/Real-Madrid-Portfolio-project-1)
 
-Originally I'd wanted the Real Madrid Site I built to have a game side to it, so that the users felt there was a fun side to the Site rather than it just being informative. However at the time I wasn't able to create this as my knowledge of Javascript was incredibly limited.
+It was built and set up so anyone who plays it feels they are playing a game. Originally I'd wanted the Real Madrid Site I built to have a game side to it, so that Uusers felt there was a fun element to the Site rather than it just being informative. However at the time I wasn't able to create this as my knowledge of Javascript was incredibly limited.
 
 The Quiz Site is now fully operational so feel free to have a go and test your Real Madrid Trivia knowledge by following the link below:
 
@@ -60,13 +60,13 @@ The Quiz Site is now fully operational so feel free to have a go and test your R
 
 ## OVERVIEW
 
-The User's experience was put at the forefront of the design of this page, however there are some features that I want to add in future, and I've referred to these in the [Future Features Section](#future-features).
+The User's experience was put at the forefront of the design of this page, however there are some features that I want to add in future which I've referred to in the [Future Features Section](#future-features).
 
-Once the Quiz Site is linked to the main Real Madrid Site and these have been implemented, I believe the User's experience will be even better.
+Once the Quiz Site is linked to the main Real Madrid Site and these features have been implemented, I believe the User's experience will be even better.
 
 ## WIREFRAMES
 
-The wireframes were created on [Balsamiq](https://balsamiq.com/wireframes/) and were used to represent the structure and layout intended on the site
+The wireframes were created on [Balsamiq](https://balsamiq.com/wireframes/) and were used to represent the structure and layout intended on the site.
 
 Although the final design varies slightly from the initial wireframes, these can be seen below:
 
@@ -84,7 +84,7 @@ The site is split into 2 main pages:
 
 The Results Screen will be displayed to the User once they have completed the quiz, and is part of the [quiz.html](quiz.html) file.
 
-The code in [script.js](script.js) checks whether all the questions have been answered using the _displayNext()_ & _resetState()_ functions. Once this is done and by combining these functions with the _gameScore()_ function, the question is replaced with the User's score and a message is displayed alongside it which changes depending on how many questions they got right.
+The code in [script.js](script.js) checks whether all the questions have been answered using the _displayNext()_ & _resetState()_ functions. Once this is done, by combining these functions with the _gameScore()_ function, the question element is replaced with the User's score. The User will also see a message is displayed alongside the score which changes depending on how many questions they got right.
 
 The questions used in the quiz, and the file containing the quiz structure and logic are stored in separate JS files:
 
@@ -92,17 +92,17 @@ The questions used in the quiz, and the file containing the quiz structure and l
 
 2. [**Quiz Creator and Logic File**](assets/js/script.js)
 
-This way in future whenever anyone wants to add a question, update the answers or remove a question this is easier to do.
+This way in future whenever anyone wants to add a question, update the answers or remove a question it is easier to do.
 
 ## DESIGN CHOICES
 
 This Real Madrid Quiz Site was designed to feel like an extension of the Real Madrid Page built for my first Portfolio Project.
 
-On that page I took inspiration from some of my favourite kits and mainly used a Navy, Black and Gold colour theme, so I've tried to maintain this colour scheme consistent by applying it to the Quiz Site.
+On that page I took inspiration from some of my favourite kits and mainly used a Navy, Black and Gold colour theme. I've therefore tried to maintain this colour scheme consistent by applying a similar one to the Quiz Site.
 
 ![Colour Scheme used on the site](assets/readme_images/real_madrid_quiz_page_colour_scheme.png)
 
-Some of the feedback following the submission of the first project was that the site sometimes felt too cluttered with too much going on, and it may have been harder for a User to focus on something specific and could even make them feel overwhelmed. As such, in order to mitigate this the main change I did was to make the background image larger. This way it doesn't feel like there's so much going on in the background making the site feel cleaner and less busy.
+Some of the feedback following the submission of the first project was that the Site sometimes felt too cluttered with too much going on, and it may have been harder for a User to focus on something specific, and could even make them feel overwhelmed. In order to mitigate this, the main design change I did was to make the background image larger. This way it doesn't feel like there's so much going on in the background making the site feel cleaner and less busy.
 
 I will also apply this change to the Madrid Site Project so as to make all the pages of the site feel consistent.
 
@@ -110,7 +110,7 @@ I will also apply this change to the Madrid Site Project so as to make all the p
 
 ## OUTLINE
 
-Even though the site has only two main pages, the main intention is that from a User's perspective it will feel like it is split into three parts:
+Even though the site has only two main pages, the main intention is that from a User's perspective it will feel like there are three parts:
 
 1. [_Instructions_](#index-page)
 
@@ -138,23 +138,23 @@ When this site is linked to the Real Madrid Project, the aim is that the User wi
 
 ### FOOTER
 
-The User will find links to Real Madrid's Official Social Media Channels on the footer, and these are displayed with icons so the user knows which Social Media site they're accessing.
+The User will find links to Real Madrid's Official Social Media Channels on the footer, and these are displayed with icons so they knows which Social Media site they are accessing.
 
 ![Footer Screenshot](assets/readme_images/footer.jpg)
 
-These open in a new tab when actioned, so as to give the User more autonomy and control over how they choose to navigate the site.
+These links open in a new tab when actioned, so as to give the User more autonomy and control over how they choose to navigate the Site.
 
-The Footer will be displayed across all the pages the user sees, so even if they are halfway through a quiz game, or on the results screen, they are able to access these links, giving them full control.
+The Footer will be displayed across all the pages a user sees, so even if they are halfway through a quiz game, or on the results screen, they are able to access these links, giving them full control.
 
 ### INDEX PAGE
 
 This is the first screen the User will see when they access the quiz. All it contains are some simple instructions and a button with which the User can start the quiz.
 
-It is simply laid out and the instructions box and text have been styled so that it looks good across different sized screens.
+It is simply laid out and the instructions box and text have been styled and tested across different sized screens so that it looks good consistently.
 
 ![Index Page View](assets/readme_images/index.HTML_computer_view.png)
 
-I also added media queries to the CSS code in order to make the site responsive, depending on whether the device the User is operating is in landscape or portrait mode.
+I also added media queries to the CSS code in order to make the site responsive, which it is across different sized screens, and also takes into account whether the device the User is operating is in landscape or portrait mode.
 
 ![Index Page Phone Landscape View](assets/readme_images/index.HTML_phone_landscape_view.png)
 
@@ -162,33 +162,33 @@ I also added media queries to the CSS code in order to make the site responsive,
 
 I created this page following some feedback from my Mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
 
-When I originally designed the page I hadn't thought of including an Instructions Page as it seemed obvious to me that a User accessing the site would know what it would be about.
+When I originally designed the Quiz I hadn't thought of including an Instructions Page as it seemed obvious to me that a User accessing the site would know what it would be about and what to do.
 
-This screen gives the user a chance to read through the instructions, and that way they will know that there are 10 questions only, and that some of these might be repeated, which might have otherwise caused some confusion.
+This screen gives the user a chance to read through the instructions, and that way they will know that there are 10 questions only, and that some of these might be repeated which would have otherwise caused some confusion.
 
 It also gives the user control in the sense that they are able to start the quiz whenever they want by pressing the start button instead of being chucked straight into the game.
 
 Now it has been added I believe that from a User's perspective, not jumping straight into the quiz is a better way to set the site up.
 
-Users I got to test the Site also confirmed that knowing in advance that some of the questions might get repeated made their experience better. They explained that as they now knew some questions might come up more than once, it felt to them like this might have been done deliberately, rather than being caused by a bug in the code.
+Users I got to test the Site also confirmed that knowing in advance that some of the questions might get repeated made their experience better. They explained that as they now knew some questions might come up more than once, it felt to them like this might have been done deliberately, rather than being caused by a an error.
 
 They also stated that if they got the same question twice, now that it had been mentioned in the instructions they felt like it was a chance to increase their score if they'd got the question right, or as a second chance to get the answer right if they had answered incorrectly.
 
 ### QUIZ PAGE
 
-The Quiz Page is set up simply and contains a box with the quiz title, question with a counter out of ten and the answer options below that.
+The Quiz Page is set up simply and contains a box with the quiz title, the question, a counter out of ten so the Users know which question they're on, and the answer options below.
 
 ![Quiz Questions Page - Computer View](assets/readme_images/quiz.HTML_computer_view.png)
 
 ![Quiz Questions Page - Phone View](assets/readme_images/quiz.HTML_phone_view.png)
 
-Under the quiz title, the question is displayed and I added a counter so the User can see how many questions they've answered. In future I would like to add a feature where the User chooses how many questions come up in the quiz.
+Under the quiz title, the question is displayed and alongside a counter so the User can see which question they are currently on. In future I would like to add a feature where the User chooses how many questions come up in the quiz.
 
 Below the question, a User will find the answer options split into four separate boxes. These have been styled in contrast to the box they are in so that they stand out, which ensures that there is a clear distinction between the question and answer sections.
 
 In order to further improve the User's experience on the site, I made the four answer options responsive and their colour is inverted when they are hovered over with the mouse.
 
-This also works for phones and tablets, although as a future feature I'd also like to make these more responsive to touch actions, rather than mainly hover actions.
+This also works for phones and tablets, although as a future feature I'd also like to make these more responsive to touch actions, rather than mouse hover actions.
 
 ![Quiz Questions Page - Computer View](assets/readme_images/quiz.HTML_computer_view.png)
 
@@ -204,9 +204,9 @@ If the User answered correctly, then their selection will be highlighted in gree
 
 The "Next" button is also responsive and the colours are inverted when the user hovers their mouse or taps it. However, it is only displayed once the question on the screen has been answered, with the aim being to improve the Users' experience while playing. I created it this way following a comment from one of my friends who had seen the initial design.
 
-They suggested that if the button was visible to the User, they might try and skip a question if they didn't know the answer, and this would affect their experience.
+They suggested that if the button was visible to a user, they might try and skip a question if they didn't know the answer, which would most likely affect their experience on the Site.
 
-To prevent a user skipping the question altogether and prompt them to at least have a guess, the "Next" button is only visible and actionable once the question has been answered. This way the User might get the answer right even if they didn't know what it was, giving them a better experience on the platform.
+To prevent a user skipping the question altogether and prompt them to at least have a guess, the "Next" button is only visible and actionable once the question has been answered. This way the User might actually get the answer right even if they didn't know what it was and guessed, giving them a better experience on the platform.
 
 ![Next Button Computer View Hover](assets/readme_images/quiz.HTML_computer_view_correct_nextBtn_hover.png)
 
@@ -238,9 +238,9 @@ If they score between 5 and 7, the message displayed will look like this:
 And if they score less than 5, the message displayed alongside their score will look like this:
 ![Final Result Message 3](assets/readme_images/quiz.HTML_result_Hazard_message.png)
 
-The line indicating to the user how to get back to the instructions page was added after some feedback from my Mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), who said he believed it would improve the User's experience and provide further clarity on how to navigate the Site.
+The line indicating to the user how to get back to the instructions page was added after some feedback from my Mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), who said he believed it would improve their experience and provide further clarity on how to navigate the Site.
 
-My plan is to add another button in future that sits alongside the "Play Again" one that says "Back to the Homepage". I believe that adding this would make the Results message stand out more to the user and probably make the site feel more streamlined and responsive.
+My plan is to add another button in future that sits alongside the "Play Again" one which says "Back to the Homepage". I believe that adding this would make the Results message stand out more to a user and probably make the site feel more streamlined and responsive.
 
 ## FUTURE FEATURES
 
@@ -250,7 +250,7 @@ As a result, there are quite a few features I want to implement in future that I
 
 - Once I've linked both projects, in order to make the whole site consistent I'll have to change the Navigation Bar's layout and add links to the other pages of the site. It would still behave in a similar way to now, but the new layout and links would be consistent across the whole site, meaning the User could then access different pages directly from the Navigation Bar.
 
-- As mentioned in the previous section once both projects have been linked, I'd like to add another button with a link to the Madrid Project Home Page next to the "Play Again" button on the results screen.
+- As mentioned in the previous section, once both projects have been linked, I'd like to add another button with a link to the Madrid Project Home Page next to the "Play Again" button on the results screen.
 
 - A further addition I'd like to implement is to make the "Play Game" button in the instructions page responsive, just like the "Next" and "Play Again" buttons are.
 
@@ -275,6 +275,10 @@ _Instructions Page Results:_
 
 _Quiz Page Results:_
 ![Quiz Page Lighthouse Results](assets/readme_images/quiz.HTML_lighthouse_results.png)
+
+The site was designed to look good across different sized screens with the help of Google Chrome's Developer Tools.
+
+Once the design and content was finalised I asked people I know who have access to tablets and different sized laptops and phones to try out the site and let me know their feedback. Following the feedback received, the changes were implemented and I asked them to test the site again.
 
 ## VALIDATOR TESTING
 
