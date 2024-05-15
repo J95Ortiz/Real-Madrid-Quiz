@@ -60,7 +60,7 @@ The Quiz Site is now fully operational so feel free to have a go and test your R
 
 ## OVERVIEW
 
-The User's experience was put at the forefront of the design of this page, however there are some features that I want to add in future which I've referred to in the [Future Features Section](#future-features).
+The User's experience was put at the forefront of the design of this page, however there are some features which I want to add in future and I have referred to these in the [Future Features Section](#future-features).
 
 Once the Quiz Site is linked to the main Real Madrid Site and these features have been implemented, I believe the User's experience will be even better.
 
@@ -82,7 +82,7 @@ The site is split into 2 main pages:
 
 2. [**The Quiz Page**](quiz.html)
 
-The Results Screen will be displayed to the User once they have completed the quiz, and is part of the [quiz.html](quiz.html) file.
+The Results Screen will be displayed to the User once they have completed the quiz, but is part of the [quiz.html](quiz.html) file.
 
 The code in [script.js](script.js) checks whether all the questions have been answered using the _displayNext()_ & _resetState()_ functions. Once this is done, by combining these functions with the _gameScore()_ function, the question element is replaced with the User's score. The User will also see a message is displayed alongside the score which changes depending on how many questions they got right.
 
@@ -102,7 +102,7 @@ On that page I took inspiration from some of my favourite kits and mainly used a
 
 ![Colour Scheme used on the site](assets/readme_images/real_madrid_quiz_page_colour_scheme.png)
 
-Some of the feedback following the submission of the first project was that the Site sometimes felt too cluttered with too much going on, and it may have been harder for a User to focus on something specific, and could even make them feel overwhelmed. In order to mitigate this, the main design change I did was to make the background image larger. This way it doesn't feel like there's so much going on in the background making the site feel cleaner and less busy.
+Some of the feedback following the submission of the first project was that the Site sometimes felt too cluttered with too much going on, and it may have been hard at times for a User to focus on something specific, and could even make them feel overwhelmed. In order to mitigate this, the main design change I did was to make the background image larger. This way it doesn't feel like there's so much going on in the background making the site feel cleaner and less busy.
 
 I will also apply this change to the Madrid Site Project so as to make all the pages of the site feel consistent.
 
@@ -122,7 +122,7 @@ Even though the site has only two main pages, the main intention is that from a 
 
 ### NAVIGATION BAR
 
-The Navigation Bar is very simple as I based the code off the Real Madrid Site I created, but removed the links to the other pages as this would confuse users trying to access parts which haven't been linked at this stage.
+The Navigation Bar is very simple as I based the code off the Real Madrid Site I created, but I removed the links to the other pages as this would confuse users who might try to access pages which haven't been linked at this stage.
 
 If the User wants to, they can return to the Instructions Page by clicking or tapping on the logo or the text next to it, and this is also communicated to the user on the Results Screen.
 
@@ -132,7 +132,7 @@ I checked with a couple of friends who I had asked to test the site which layout
 
 ![Navigation Bar Screenshot](assets/readme_images/header.png)
 
-As a result, the Navigation Bar looks simple and clean, with no unnecessary links or icons which might confuse a User.
+As a result, the Navigation Bar looks simple and clean, with no unnecessary links or icons which might confuse a user.
 
 When this site is linked to the Real Madrid Project, the aim is that the User will also see links in the Navigation Bar to the Homepage, Squad Page and Lotto Form, which they can then use to navigate the full site.
 
@@ -164,15 +164,17 @@ I created this page following some feedback from my Mentor [Precious Ijege](http
 
 When I originally designed the Quiz I hadn't thought of including an Instructions Page as it seemed obvious to me that a User accessing the site would know what it would be about and what to do.
 
-This screen gives the user a chance to read through the instructions, and that way they will know that there are 10 questions only, and that some of these might be repeated which would have otherwise caused some confusion.
+This screen gives the user a chance to read through the instructions. That way they will know that there are only 10 questions, and that some of these might be repeated which would have otherwise caused some confusion.
 
-It also gives the user control in the sense that they are able to start the quiz whenever they want by pressing the start button instead of being chucked straight into the game.
+It also gives the user control in the sense that they are able to start the quiz whenever they want by pressing the start button instead of being chucked straight into the game when accessing the Site.
 
-Now it has been added I believe that from a User's perspective, not jumping straight into the quiz is a better way to set the site up.
+Now it has been added I believe that from a User's perspective, not jumping straight into the quiz is a better way to set the Site up.
 
-Users I got to test the Site also confirmed that knowing in advance that some of the questions might get repeated made their experience better. They explained that as they now knew some questions might come up more than once, it felt to them like this might have been done deliberately, rather than being caused by a an error.
+Users I got to test the Site also confirmed that knowing in advance that some of the questions might get repeated made their experience better. They explained that as they now knew about this, if a question did come up more than once they felt like it was deliberate.
 
-They also stated that if they got the same question twice, now that it had been mentioned in the instructions they felt like it was a chance to increase their score if they'd got the question right, or as a second chance to get the answer right if they had answered incorrectly.
+They also mentioned that getting the same question twice after it had been stated in the instructions made them feel like they had a chance to increase their score if they'd answered correctly, or as a second chance to get the answer right if they hadn't.
+
+This was an improvement to the site as the feedback from test subjects was consistently positive following this addition.
 
 ### QUIZ PAGE
 
@@ -184,11 +186,11 @@ The Quiz Page is set up simply and contains a box with the quiz title, the quest
 
 Under the quiz title, the question is displayed and alongside a counter so the User can see which question they are currently on. In future I would like to add a feature where the User chooses how many questions come up in the quiz.
 
-Below the question, a User will find the answer options split into four separate boxes. These have been styled in contrast to the box they are in so that they stand out, which ensures that there is a clear distinction between the question and answer sections.
+Below the question, a User will find the answer options split into four separate boxes. These have been styled in contrast to the box they are in so that they stand out. This ensures that there is a clear distinction between the question and answer sections.
 
 In order to further improve the User's experience on the site, I made the four answer options responsive and their colour is inverted when they are hovered over with the mouse.
 
-This also works for phones and tablets, although as a future feature I'd also like to make these more responsive to touch actions, rather than mouse hover actions.
+This also works for phones and tablets, although as a future feature I'd also like to add is making these more responsive to touch actions, as well as the mouse hover actions currently.
 
 ![Quiz Questions Page - Computer View](assets/readme_images/quiz.HTML_computer_view.png)
 
@@ -196,7 +198,7 @@ This also works for phones and tablets, although as a future feature I'd also li
 
 Once a question has been answered, the selected answer will change colour depending on the User's choice.
 
-If the User answered correctly, then their selection will be highlighted in green. If their choice was incorrect, then their choice will be highlighted in red and the correct answer's box will go green.
+If the User answered correctly, then their selection will be highlighted in green. If their choice was incorrect, then their choice will be highlighted in red and the correct answer's box will turn green. That way the now know the correct answer, and if the question does come up again, they've got a better chance of getting it right this time.
 
 ![Correct Answer Computer View](assets/readme_images/quiz.HTML_computer_view_correct.png)
 
@@ -206,15 +208,15 @@ The "Next" button is also responsive and the colours are inverted when the user 
 
 They suggested that if the button was visible to a user, they might try and skip a question if they didn't know the answer, which would most likely affect their experience on the Site.
 
-To prevent a user skipping the question altogether and prompt them to at least have a guess, the "Next" button is only visible and actionable once the question has been answered. This way the User might actually get the answer right even if they didn't know what it was and guessed, giving them a better experience on the platform.
+To prevent a user skipping the question altogether and prompt them to at least have a guess, the "Next" button is only visible and actionable once the question has been answered. This way the User might actually get the answer right even if they guessed it, giving them a better experience on the platform.
 
 ![Next Button Computer View Hover](assets/readme_images/quiz.HTML_computer_view_correct_nextBtn_hover.png)
 
 ### RESULTS SCREEN
 
-The Results Screen design is meant to be consistent with the rest of the site by maintaining the same colour scheme as the Instructions and Question pages.
+The Results Screen design is intended to be consistent with the rest of the site by maintaining the same colour scheme and a similar layout to the Instructions and Question pages.
 
-Once a User gets to this screen, the display will show them how many questions they answered correctly, directions on how to go back to the instructions page and a personalised message which changes depending on their score.
+Once a user gets to this screen, the display will show them how many questions they answered correctly, directions on how to go back to the instructions page and a personalised message which changes depending on their score.
 
 The "Play Again" button is styled and when hovered over is responsive in the same way the "Next" button is.
 
@@ -227,7 +229,7 @@ The "Play Again" button is styled and when hovered over is responsive in the sam
 ![Results Screen Phone View](assets/readme_images/quiz.HTML_result_phone_view.png)
 ![Results Screen Hover Phone View](assets/readme_images/quiz.HTML_result_phone_view_hover.png)
 
-I decided to add a personalised message to this screen as I thought that from a User's point of view just having their score wasn't enough, and adding this feature was a good way of improving their experience. I therefore created three different messages, and the user will see a different one depending on their final score.
+I decided to add a personalised message to this screen as I thought that from a user's point of view just having their score wasn't enough and adding this feature seemed like a good way of improving their experience. I therefore created three different messages, and the User will see a different one depending on their final score.
 
 If they score higher than 7 the message will look like this:
 ![Final Result Message 1](assets/readme_images/quiz.HTML_result_galactico_message.png)
@@ -244,7 +246,7 @@ My plan is to add another button in future that sits alongside the "Play Again" 
 
 ## FUTURE FEATURES
 
-My plan ultimately is to link the Quiz Site to the Real Madrid Site I created for my first project. Once this is done the User should feel that the quiz is an extension of the Madrid Site, rather than its own standalone project.
+My plan ultimately is to link the Quiz Site to the Real Madrid Site I created for my first project. Once this is done the User should feel that the Quiz is an extension of the Madrid Site, rather than its own standalone project.
 
 As a result, there are quite a few features I want to implement in future that I've been unable to so far. I'll continue working on this project once I've received my grades and by then I should be capable, and have the time to carry out all these changes.
 
@@ -282,7 +284,7 @@ Once the design and content was finalised I asked people I know who have access 
 
 ## VALIDATOR TESTING
 
-The W3C [Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to check the HTML code on both pages, and they passed.
+The W3C [Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to check the HTML code on both pages and they passed.
 
 _Index.html:_
 ![index.html Validator Result](assets/readme_images/index.HTML_validator_check.png)
@@ -340,29 +342,29 @@ Quiz Question Content Credit Links:
 
 - [Real Madrid Trivia Template | LivePolls | QuestionPro](https://www.questionpro.com/livepolls/templates/real-madrid-trivia-questions/)
 
-- [Sergio Ramos Wikipedia Page](https://en.wikipedia.org/wiki/Sergio_Ramos)
-
-- [Real Madrid Official Site Cristiano Ronaldo Page](https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro)
+- [Marca Article](https://www.marca.com/en/football/real-madrid/2021/06/17/60ca692722601d4f438b4696.html)
 
 - [Bleacher Report Article on Gareth Bale](https://bleacherreport.com/articles/10061039-gareth-bale-retires-at-33-won-champions-league-5-times-with-real-madrid#:~:text=The%2033%2Dyear%2Dold%20is,in%20a%20nine%2Dyear%20stretch.&text=He%20also%20played%20for%20Tottenham,FC%20at%20the%20club%20level)
 
-- [Real Madrid Official Site Sergio Ramos Page](https://www.realmadrid.com/en-US/the-club/history/football-legends/sergio-ramos-garcia)
-
-- [Transfermarkt Zidane Page](https://www.transfermarkt.co.uk/zinedine-zidane/alletore/spieler/3111/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=)
-
-- [Transfermarkt Sergio Ramos Page](https://www.transfermarkt.co.uk/sergio-ramos/alletore/spieler/25557/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=)
-
-- [Marca Article](https://www.marca.com/en/football/real-madrid/2021/06/17/60ca692722601d4f438b4696.html)
+- [Transfermarkt Gareth Bale Page](https://www.transfermarkt.co.uk/gareth-bale/leistungsdatenverein/spieler/39381)
 
 - [Planet Sport Casillas Page](https://www.planetsport.com/soccer/iker-casillas)
 
 - [Transfermarkt Casillas Page](https://www.transfermarkt.co.uk/iker-casillas/leistungsdatenverein/spieler/3979)
 
+- [Sergio Ramos Wikipedia Page](https://en.wikipedia.org/wiki/Sergio_Ramos)
+
+- [Transfermarkt Sergio Ramos Page](https://www.transfermarkt.co.uk/sergio-ramos/alletore/spieler/25557/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=)
+
+- [Real Madrid Official Site Sergio Ramos Page](https://www.realmadrid.com/en-US/the-club/history/football-legends/sergio-ramos-garcia)
+
+- [Real Madrid Official Site Cristiano Ronaldo Page](https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro)
+
+- [Transfermarkt Zidane Page](https://www.transfermarkt.co.uk/zinedine-zidane/alletore/spieler/3111/plus/0?saison=&verein=418&liga=&wettbewerb=&pos=&minute=&pos=&torart=&stand=)
+
 - [Transfermarkt Eden Hazard Page](https://www.transfermarkt.co.uk/eden-hazard/leistungsdatenverein/spieler/50202)
 
 - [Transfermarkt Raul Gonzalez Page](https://www.transfermarkt.co.uk/raul/erfolge/spieler/7349)
-
-- [Transfermarkt Gareth Bale Page](https://www.transfermarkt.co.uk/gareth-bale/leistungsdatenverein/spieler/39381)
 
 ## MEDIA CREDITS
 
